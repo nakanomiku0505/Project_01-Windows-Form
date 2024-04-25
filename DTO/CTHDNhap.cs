@@ -1,0 +1,16 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DTO
+{
+    internal class CTHDNhap
+    {
+        public string MaHDN { get; set; }
+        public string MaSP { get; set; }
+        public int SLNhap { get; set; }
+        public string GiaNhap {  get; set; }
+    }
+}
