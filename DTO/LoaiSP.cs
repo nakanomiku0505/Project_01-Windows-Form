@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    internal class LoaiSP
+    public class LoaiSP
     {
         public string MaLoaiSP {  get; set; }
         public string TenLoaiSP { get; set; }

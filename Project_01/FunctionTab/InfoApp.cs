@@ -51,5 +51,11 @@ namespace Project_01.FunctionTab
             };
             System.Diagnostics.Process.Start(mo);
         }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            ProcessStartInfo sInfo = new ProcessStartInfo("https://x.com/sawaratsuki1004");
+            Process.Start(sInfo);
+        }
     }
 }

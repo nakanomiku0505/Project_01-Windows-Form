@@ -7,12 +7,13 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    internal class HoaDonNhap
+    public class HoaDonNhap
     {
         public string MaHDN {  get; set; }
         public string MaNV { get; set; }
         public string MaNCC { get; set; }
         public DateTime NgayNhap { get; set;}
         public float TongTien {  get; set; }
+        
     }
 }

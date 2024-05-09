@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    internal class CTHDBan
+    public class CTHDBan
     {
         public string MaHDB { get; set; }
         public string MaSP { get; set; }

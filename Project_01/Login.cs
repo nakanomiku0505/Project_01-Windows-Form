@@ -9,13 +9,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BUS;
 using ComponentFactory.Krypton.Toolkit;
+using Project_01.FunctionTab;
 
 namespace Project_01
 {
     public partial class Login : KryptonForm
     {
-        private string dfUser = "Username";
-        private string dfPass = "Password";
+        
+        
         public Login()
         {
             InitializeComponent();
@@ -23,7 +24,7 @@ namespace Project_01
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            pLogin.BorderRadius = 10;
         }
 
         private void kryptonTextBox1_TextChanged(object sender, EventArgs e)
@@ -31,39 +32,14 @@ namespace Project_01
 
         }
 
-        private void tbUser_Enter(object sender, EventArgs e)
+        private void tbUser_TextChanged(object sender, EventArgs e)
         {
-            if (tbUser.Text == dfUser)
-            {
-                tbUser.Text = "";
-            }
+
         }
 
-        private void tbUser_Leave(object sender, EventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(tbUser.Text))
-            {
-                tbUser.Text = dfUser;
-            }
-        }
+        
 
-        private void tbPass_Leave(object sender, EventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(tbPass.Text))
-            {
-                tbPass.Text = dfPass;
-            }
-        }
-
-        private void tbPass_Enter(object sender, EventArgs e)
-        {
-            if (tbPass.Text == dfPass)
-            {
-                tbPass.Text = "";
-            }
-        }
-
-        private void kryptonButton1_Click(object sender, EventArgs e)
+        private void btLogin_Click(object sender, EventArgs e)
         {
             string users = tbUser.Text;
             string passwords = tbPass.Text;
@@ -75,16 +51,83 @@ namespace Project_01
                 MessageBox.Show(check, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Hide();
                 Home home = new Home();
-                
+
                 home.ShowDialog();
-                
+
             }
-            catch(Exception ex) 
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                tbUser.Text = "";   
+                tbUser.Text = "";
                 tbPass.Text = "";
+                tbUser.Focus();
             }
+        }
+
+        private void tbUser_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                btLogin_Click(sender, e);
+            }
+        }
+
+        private void tbPass_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                btLogin_Click(sender, e);
+            }
+        }
+
+        private void tbUser_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbPass_TextChanged(object sender, EventArgs e)
+        {
+            if (tbPass.Text == "")
+            {
+                tbPass.PasswordChar = '\0';
+                tbPass.PlaceholderText = "Mật khẩu";
+            }
+            
+            else
+            {
+                tbPass.PasswordChar = '*';
+            }
+        }
+
+        private void tbPass_Load(object sender, EventArgs e)
+        {
+            tbPass.PlaceholderText = "Mật khẩu";
+        }
+
+        private void labelForgot_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Forgot fg = new Forgot();
+            fg.ShowDialog();
+            
+        }
+
+        private void btRegister_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Register rs = new Register();
+            rs.ShowDialog();
+            
+        }
+
+        private void Login_Leave(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Login_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

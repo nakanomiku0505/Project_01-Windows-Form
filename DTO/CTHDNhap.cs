@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    internal class CTHDNhap
+    public class CTHDNhap
     {
         public string MaHDN { get; set; }
         public string MaSP { get; set; }

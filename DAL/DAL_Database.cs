@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    internal class DAL_Database
+    public class DAL_Database
     {
         string strcon = @"Data Source=LAPTOP-A34FEDCG;Initial Catalog=QLCHMT;Integrated Security=True;Encrypt=False";
 
@@ -17,7 +17,7 @@ namespace DAL
         public SqlDataReader dr;
         SqlDataAdapter da;
         DataTable dt;
-
+        public SqlParameter[] pi;
         public void Connect()
         {
             con = new SqlConnection(strcon);

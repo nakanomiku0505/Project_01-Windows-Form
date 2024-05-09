@@ -42,14 +42,35 @@
     <Reference Include="Bunifu.UI.WinForms.BunifuButton">
       <HintPath>..\..\..\..\..\Downloads\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuCheckBox">
+      <HintPath>..\..\..\..\..\Downloads\Windows Form UI\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuCheckBox.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuCircleProgress">
       <HintPath>..\..\..\..\..\Downloads\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuCircleProgress.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
       <HintPath>..\..\..\..\..\Downloads\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDatePicker">
+      <HintPath>..\..\..\..\..\Downloads\Windows Form UI\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuDatePicker.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDropdown">
+      <HintPath>..\..\..\..\..\Downloads\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuDropdown.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuFormDock">
       <HintPath>..\..\..\..\..\Downloads\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuFormDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuGauge">
+      <HintPath>..\..\..\..\..\Downloads\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuGauge.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuGradientPanel">
+      <HintPath>..\..\..\..\..\Downloads\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuGradientPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuGroupBox">
+      <HintPath>..\..\..\..\..\Downloads\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuGroupBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuImageButton">
+      <HintPath>..\..\..\..\..\Downloads\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuImageButton.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
       <HintPath>..\..\..\..\..\Downloads\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
@@ -57,20 +78,53 @@
     <Reference Include="Bunifu.UI.WinForms.BunifuPages">
       <HintPath>..\..\..\..\..\Downloads\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuPages.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPanel">
+      <HintPath>..\..\..\..\..\Downloads\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox">
+      <HintPath>..\..\..\..\..\Downloads\Windows Form UI\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuProgressBar">
       <HintPath>..\..\..\..\..\Downloads\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuProgressBar.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuRadioButton">
       <HintPath>..\..\..\..\..\Downloads\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuRadioButton.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuRating">
+      <HintPath>..\..\..\..\..\Downloads\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuRating.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuScrollBar">
+      <HintPath>..\..\..\..\..\Downloads\Windows Form UI\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuScrollBar.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuSeparator">
       <HintPath>..\..\..\..\..\Downloads\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuSeparator.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuShadowPanel">
+      <HintPath>..\..\..\..\..\Downloads\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuShadowPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuShapes">
+      <HintPath>..\..\..\..\..\Downloads\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuShapes.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuSlider">
+      <HintPath>..\..\..\..\..\Downloads\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuSlider.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuSnackbar">
+      <HintPath>..\..\..\..\..\Downloads\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuSnackbar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
+      <HintPath>..\..\..\..\..\Downloads\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuToggleSwitch">
       <HintPath>..\..\..\..\..\Downloads\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuToggleSwitch.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuToolTip">
       <HintPath>..\..\..\..\..\Downloads\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuToolTip.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTransition">
+      <HintPath>..\..\..\..\..\Downloads\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuTransition.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuUserControl">
+      <HintPath>..\..\..\..\..\Downloads\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuUserControl.dll</HintPath>
     </Reference>
     <Reference Include="ComponentFactory.Krypton.Docking">
       <HintPath>..\..\..\..\..\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Docking.dll</HintPath>
@@ -99,9 +153,11 @@
     <Reference Include="System.DirectoryServices" />
     <Reference Include="System.DirectoryServices.AccountManagement" />
     <Reference Include="System.DirectoryServices.Protocols" />
+    <Reference Include="System.Drawing.Design" />
     <Reference Include="System.IdentityModel" />
     <Reference Include="System.IO.Compression.FileSystem" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Messaging" />
     <Reference Include="System.Net" />
     <Reference Include="System.Numerics" />
     <Reference Include="System.Reflection.Context" />
@@ -126,11 +182,23 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forgot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forgot.Designer.cs">
+      <DependentUpon>Forgot.cs</DependentUpon>
+    </Compile>
     <Compile Include="FunctionTab\Buy.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="FunctionTab\Buy.Designer.cs">
       <DependentUpon>Buy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FunctionTab\DanhMuc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FunctionTab\DanhMuc.Designer.cs">
+      <DependentUpon>DanhMuc.cs</DependentUpon>
     </Compile>
     <Compile Include="FunctionTab\Dashboard.cs">
       <SubType>UserControl</SubType>
@@ -188,8 +256,50 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLCHMTDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLCHMTDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLCHMTDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLCHMTDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLCHMTDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLCHMTDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLCHMTDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLCHMTDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLCHMTDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLCHMTDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLCHMTDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLCHMTDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forgot.resx">
+      <DependentUpon>Forgot.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FunctionTab\Buy.resx">
       <DependentUpon>Buy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FunctionTab\DanhMuc.resx">
+      <DependentUpon>DanhMuc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FunctionTab\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
@@ -209,6 +319,9 @@
     <EmbeddedResource Include="FunctionTab\QLSP.resx">
       <DependentUpon>QLSP.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FunctionTab\ThongKe.resx">
+      <DependentUpon>ThongKe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
@@ -226,6 +339,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -250,6 +366,72 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="QLCHMTDataSet.xsc">
+      <DependentUpon>QLCHMTDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLCHMTDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLCHMTDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLCHMTDataSet.xss">
+      <DependentUpon>QLCHMTDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLCHMTDataSet1.xsc">
+      <DependentUpon>QLCHMTDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QLCHMTDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLCHMTDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLCHMTDataSet1.xss">
+      <DependentUpon>QLCHMTDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QLCHMTDataSet2.xsc">
+      <DependentUpon>QLCHMTDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QLCHMTDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLCHMTDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLCHMTDataSet2.xss">
+      <DependentUpon>QLCHMTDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QLCHMTDataSet3.xsc">
+      <DependentUpon>QLCHMTDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QLCHMTDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLCHMTDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLCHMTDataSet3.xss">
+      <DependentUpon>QLCHMTDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QLCHMTDataSet4.xsc">
+      <DependentUpon>QLCHMTDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="QLCHMTDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLCHMTDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLCHMTDataSet4.xss">
+      <DependentUpon>QLCHMTDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="QLCHMTDataSet5.xsc">
+      <DependentUpon>QLCHMTDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="QLCHMTDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLCHMTDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLCHMTDataSet5.xss">
+      <DependentUpon>QLCHMTDataSet5.xsd</DependentUpon>
+    </None>
     <None Include="Resources\icons8-macos-close-24.png" />
   </ItemGroup>
   <ItemGroup>
@@ -308,6 +490,57 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Mail_fluent_Icon.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-96 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aokana_wordpress-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6427724.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vecteezy_drak-geometric-abstract-background-template_19797560.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-forgot-password-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-back-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-register-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-refresh-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-edit-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-product-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-category-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-employee-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-supplier-96.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
