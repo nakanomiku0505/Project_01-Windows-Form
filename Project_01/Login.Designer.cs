@@ -112,7 +112,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(583, 87);
+            this.label1.Location = new System.Drawing.Point(593, 87);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(82, 38);
@@ -423,7 +423,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Project_01.Properties.Resources.computer;
-            this.pictureBox1.Location = new System.Drawing.Point(585, 11);
+            this.pictureBox1.Location = new System.Drawing.Point(595, 11);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(76, 74);
@@ -458,7 +458,7 @@
             this.pLogin.AllowFocused = false;
             this.pLogin.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pLogin.AutoSizeHeight = true;
-            this.pLogin.BorderRadius = 20;
+            this.pLogin.BorderRadius = 219;
             this.pLogin.Image = global::Project_01.Properties.Resources._6427724;
             this.pLogin.IsCircle = true;
             this.pLogin.Location = new System.Drawing.Point(0, 11);

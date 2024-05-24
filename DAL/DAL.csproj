@@ -48,6 +48,7 @@
     <Compile Include="DAL_Buy.cs" />
     <Compile Include="DAL_Dashboard.cs" />
     <Compile Include="DAL_Database.cs" />
+    <Compile Include="DAL_HoaDon-ThongKe.cs" />
     <Compile Include="DAL_KhachHang.cs" />
     <Compile Include="DAL_LoaiSP.cs" />
     <Compile Include="DAL_NhaCungCap.cs" />

@@ -46,9 +46,7 @@
   <ItemGroup>
     <Compile Include="Accounts.cs" />
     <Compile Include="CTHDBan.cs" />
-    <Compile Include="CTHDNhap.cs" />
     <Compile Include="HoaDonBan.cs" />
-    <Compile Include="HoaDonNhap.cs" />
     <Compile Include="KhachHang.cs" />
     <Compile Include="LoaiSP.cs" />
     <Compile Include="NhaCungCap.cs" />

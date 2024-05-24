@@ -10,19 +10,25 @@ using System.Windows.Forms;
 using ComponentFactory.Krypton.Toolkit;
 using Project_01.FunctionTab;
 using Bunifu.Framework.UI;
-
+using BUS;
+using DTO;
 namespace Project_01
 {
     public partial class Home : KryptonForm
     {
         bool sideBar;
         bool menuExpand;
+        string quyen = SaveAccount.quyen;
         public Home()
         {
             InitializeComponent();
             RealTime.Start();
         }
-
+        public DataTable layusers()
+        {
+            Login ln = new Login();
+            return ln.layuser();
+        }
         private void Home_Load(object sender, EventArgs e)
         {
             AnalyticBtn.Visible = true;
@@ -30,6 +36,20 @@ namespace Project_01
             panelQL.Visible = true;
             panelTK.Visible = true;
             Dashboard();
+            lbTenUser.Text = SaveAccount.users;
+            
+            if (quyen == "Login Success! (Role: Admin)")
+            {
+                btNCC.Visible = true;
+                btNV.Visible = true;
+                
+            }
+            else 
+            {
+                btNCC.Visible = false;
+                btNV.Visible = false;
+                
+            }
         }
         public void Dashboard()
         {
@@ -43,7 +63,10 @@ namespace Project_01
             panelTT.Controls.Clear();
             panelTT.Controls.Add(b);
         }
-
+        public void layuser()
+        {
+            
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             Dashboard();
@@ -93,7 +116,10 @@ namespace Project_01
 
         private void button6_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Hide();
+            Login ln = new Login();
+            ln.ShowDialog();
+            
         }
 
         private void AnalyticBtn_Click(object sender, EventArgs e)
@@ -131,10 +157,21 @@ namespace Project_01
                 else
                 {
                     panelQL.Height += 10;
-                    if (panelQL.Height == panelQL.MaximumSize.Height)
+                    if (quyen == "Login Success! (Role: Admin)")
                     {
-                        menuExpand = true;
-                        timerMenu.Stop();
+                        if (panelQL.Height == panelQL.MaximumSize.Height)
+                        {
+                            menuExpand = true;
+                            timerMenu.Stop();
+                        }
+                    }
+                    else
+                    {
+                        if (panelQL.Height == 200)
+                        {
+                            menuExpand = true;
+                            timerMenu.Stop();
+                        }
                     }
                 }
             }
@@ -201,6 +238,11 @@ namespace Project_01
         }
 
         private void bunifuPictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }

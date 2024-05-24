@@ -42,7 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BUS_Account.cs" />
+    <Compile Include="BUS_Buy.cs" />
     <Compile Include="BUS_Dashboard.cs" />
+    <Compile Include="BUS_HD-TK.cs" />
     <Compile Include="BUS_KhachHang.cs" />
     <Compile Include="BUS_LoaiSP.cs" />
     <Compile Include="BUS_NhaCungCap.cs" />

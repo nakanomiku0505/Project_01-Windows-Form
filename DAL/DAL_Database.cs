@@ -60,5 +60,13 @@ namespace DAL
             Disconnect();
             return i;
         }
+        public string GetInt(string sql)
+        {
+            Connect();
+            cmd.CommandText = sql;
+            string gt = (string)cmd.ExecuteScalar();
+            Disconnect();
+            return gt;
+        }
     }
 }

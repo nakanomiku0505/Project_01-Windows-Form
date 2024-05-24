@@ -42,7 +42,6 @@ namespace Project_01.FunctionTab
             tbTim.Clear();
             cbLoaiSP.Text = "";
             lbTenLoaiSP.Text = "";
-            pImage.Image = null;
         }
         public void LoadDS()
         {
@@ -81,57 +80,31 @@ namespace Project_01.FunctionTab
 
         private void cbLoaiSP_SelectedIndexChanged(object sender, EventArgs e)
         {
+            string selectedValue = cbLoaiSP.Text;
 
+            // Tìm dòng chứa giá trị được chọn trong DataTable
+            DataRow[] selectedRows = sp.getLSP().Select("MaLoaiSP = '" + selectedValue + "'");
+
+            // Kiểm tra xem có dòng được tìm thấy không
+            if (selectedRows.Length > 0)
+            {
+                // Lấy giá trị từ cột khác trong dòng đầu tiên (ở đây giả sử cột có tên "OtherColumn")
+                string otherValue = selectedRows[0]["TenLoaiSP"].ToString();
+
+                // Đặt giá trị vào Label
+                lbTenLSP.Text = otherValue;
+            }
         }
 
-        public void btThemAnh_Click(object sender, EventArgs e)
-        {
-            PtoB(pImage);
-            
-        }
-        public byte[] XuLiAnh(PictureBox img)
-        {
-            var m = new MemoryStream();
-            img.Image.Save(m, img.Image.RawFormat);
-            return m.ToArray();
-        }
-        public byte[] XuLiAnh2 (string path)
-        {
-            return File.ReadAllBytes(path);
-        }
-        public static byte[] Pic(PictureBox pictureBox)
-        {
-            
-            MemoryStream memoryStream = new MemoryStream();
-            pictureBox.Image.Save(memoryStream, pictureBox.Image.RawFormat);
-            return memoryStream.GetBuffer();
-        }
-        public static byte[] PtoB(PictureBox pictureBox)
-        {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "image files|*.jpg;*.png;.*gif;*.icon;.*;";
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                pictureBox.Image = Image.FromFile(openFileDialog.FileName);
-            }
-            else
-            {
-                return null;
-            }
-            MemoryStream memoryStream = new MemoryStream();
-            pictureBox.Image.Save(memoryStream, pictureBox.Image.RawFormat);
-            return memoryStream.GetBuffer();
-        }
+       
         private void btThem_Click(object sender, EventArgs e)
 
         {
             SP ls = new SP();
             ls.MaSP = tbMaSP.Text;
             ls.TenSP = tbTenSP.Text;
-            ls.Gia = float.Parse(tbGia.Text);
+            ls.Gia = Convert.ToInt32(tbGia.Text);
             ls.Mota = tbMoTa.Text;
-            anh = XuLiAnh(pImage);
-            ls.HinhAnh = anh;
             ls.SL = int.Parse(tbSL.Text);
             ls.MaLoaiSP = cbLoaiSP.Text;
             string result = sp.ThemSP(ls);
@@ -154,6 +127,58 @@ namespace Project_01.FunctionTab
             {
                 MessageBox.Show("Thêm thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void btSua_Click(object sender, EventArgs e)
+        {
+            SP ls = new SP();
+            ls.MaSP = tbMaSP.Text;
+            ls.TenSP = tbTenSP.Text;
+            ls.Gia = int.Parse(tbGia.Text);
+            ls.Mota = tbMoTa.Text;
+            ls.SL = int.Parse(tbSL.Text);
+            ls.MaLoaiSP = cbLoaiSP.Text;
+            string result = sp.SuaSP(ls);
+            if (result == "1")
+            {
+                MessageBox.Show("Sửa sản phẩm thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                LoadDS();
+                ClearTB();
+
+            }
+            else if (result == "-1")
+            {
+                MessageBox.Show("Các trường thông tin không được bỏ trống!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                MessageBox.Show("Sửa thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btXoa_Click(object sender, EventArgs e)
+        {
+            string masp = sp.XoaSP(tbMaSP.Text);
+            if (masp == "-1")
+            {
+                MessageBox.Show("Xóa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ClearTB();
+                LoadDS();
+            }
+            else
+            {
+                MessageBox.Show("Xóa thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void btTim_Click(object sender, EventArgs e)
+        {
+            string keyword = tbTim.Text;
+            listSP.DataSource = sp.TimKiemSP(keyword);
+        }
+
+        private void lbTenLSP_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -25,14 +25,14 @@ namespace DAL
         }
         public bool ThemSP(SP s)
         {
-            string sql = string.Format("EXEC InsertSanPham @TenSP = N'{0}',@Gia = '{1}', @Mota = N'{2}' ,@HinhAnh = '{3}' ,@SL = '{4}' ,@MaLoaiSP = '{5}'", s.TenSP, s.Gia, s.Mota, s.HinhAnh, s.SL, s.MaLoaiSP);
+            string sql = string.Format("EXEC InsertSanPham @TenSP = N'{0}',@Gia = '{1}', @Mota = N'{2}' ,@SL = '{3}' ,@MaLoaiSP = '{4}'", s.TenSP, s.Gia, s.Mota, s.SL, s.MaLoaiSP);
             db.Execute(sql);
             return true;
 
         }
         public bool SuaSP(SP s)
         {
-            string sql = string.Format("UPDATE SP SET TenSP = N'{0}', Gia = '{1}', Mota = N'{2}', HinhAnh = {3}, SL = '{4}', MaLoaiSP = '{5}' WHERE MaSP = '{6}'", s.TenSP, s.Gia, s.Mota, s.HinhAnh, s.SL, s.MaLoaiSP, s.MaSP);
+            string sql = string.Format("UPDATE SP SET TenSP = N'{0}', Gia = '{1}', Mota = N'{2}',  SL = '{3}', MaLoaiSP = '{4}' WHERE MaSP = '{5}'", s.TenSP, s.Gia, s.Mota, s.SL, s.MaLoaiSP, s.MaSP);
             db.Execute(sql);
             return true;
         }

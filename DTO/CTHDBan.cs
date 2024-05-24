@@ -11,6 +11,6 @@ namespace DTO
         public string MaHDB { get; set; }
         public string MaSP { get; set; }
         public int SLBan { get; set; }
-        public string GiaBan { get; set; }
+        public int GiaBan { get; set; }
     }
 }

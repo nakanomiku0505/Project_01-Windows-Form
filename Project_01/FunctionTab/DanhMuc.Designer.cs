@@ -776,7 +776,7 @@
             this.tbTenLSP.Padding = new System.Windows.Forms.Padding(3);
             this.tbTenLSP.PasswordChar = '\0';
             this.tbTenLSP.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.tbTenLSP.PlaceholderText = "Nhập tên khách hàng...";
+            this.tbTenLSP.PlaceholderText = "Nhập tên loại hàng...";
             this.tbTenLSP.ReadOnly = false;
             this.tbTenLSP.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.tbTenLSP.SelectedText = "";
@@ -790,7 +790,7 @@
             this.tbTenLSP.TextMarginBottom = 0;
             this.tbTenLSP.TextMarginLeft = 3;
             this.tbTenLSP.TextMarginTop = 0;
-            this.tbTenLSP.TextPlaceholder = "Nhập tên khách hàng...";
+            this.tbTenLSP.TextPlaceholder = "Nhập tên loại hàng...";
             this.tbTenLSP.UseSystemPasswordChar = false;
             this.tbTenLSP.WordWrap = true;
             // 

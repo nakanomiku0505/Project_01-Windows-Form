@@ -15,7 +15,7 @@ namespace Project_01
 {
     public partial class Login : KryptonForm
     {
-        
+        BUS_Account acc = new BUS_Account();
         
         public Login()
         {
@@ -45,10 +45,13 @@ namespace Project_01
             string passwords = tbPass.Text;
             try
             {
-                BUS_Account acc = new BUS_Account();
+                
                 string check = acc.checkAcc(users, passwords);
 
                 MessageBox.Show(check, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                SaveAccount.users = users;
+                SaveAccount.passwords = passwords;
+                SaveAccount.quyen = check;
                 this.Hide();
                 Home home = new Home();
 
@@ -128,6 +131,25 @@ namespace Project_01
         private void Login_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+        public DataTable layuser()
+        {
+            string tk = tbUser.Text;
+            if (tk.ToLower() == "admin")
+            {
+                DataTable dt = new DataTable();
+                dt.Columns.Add("users", typeof(string));
+                dt.Columns.Add("MaNV", typeof(string));
+                dt.Columns.Add("TenNV", typeof(string));
+                dt.Rows.Add("admin", "admin", "admin");
+                return dt;
+            }
+            return acc.layuser(tk);
+        }
+        public string users()
+        {
+            string tk = tbUser.Text;
+            return tk;
         }
     }
 }

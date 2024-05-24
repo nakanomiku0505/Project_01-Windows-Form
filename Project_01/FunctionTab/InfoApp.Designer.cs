@@ -76,9 +76,9 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label1.Location = new System.Drawing.Point(587, 312);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(255, 32);
+            this.label1.Size = new System.Drawing.Size(200, 32);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Version: 0.0.1dev (x64)";
+            this.label1.Text = "Version: 0.0.1dev \r\n";
             // 
             // label3
             // 

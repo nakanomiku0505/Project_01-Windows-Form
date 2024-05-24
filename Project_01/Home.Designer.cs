@@ -30,31 +30,32 @@
         {
             this.components = new System.ComponentModel.Container();
             this.sidebarPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelMenu = new System.Windows.Forms.Panel();
             this.MenuExpand = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.panelDB = new System.Windows.Forms.Panel();
             this.HomeBtn = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.panelBuy = new System.Windows.Forms.Panel();
             this.BuyBtn = new System.Windows.Forms.Button();
             this.panelQL = new System.Windows.Forms.Panel();
             this.btKH = new System.Windows.Forms.Button();
             this.btNCC = new System.Windows.Forms.Button();
             this.btSP = new System.Windows.Forms.Button();
             this.btDM = new System.Windows.Forms.Button();
-            this.btNV = new System.Windows.Forms.Button();
             this.ManageBtn = new System.Windows.Forms.Button();
-            this.panel6 = new System.Windows.Forms.Panel();
+            this.btNV = new System.Windows.Forms.Button();
+            this.panelTke = new System.Windows.Forms.Panel();
             this.AnalyticBtn = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.InfoApp = new System.Windows.Forms.Button();
             this.panelTK = new System.Windows.Forms.Panel();
-            this.ExitBtn = new System.Windows.Forms.Button();
+            this.LogoutBtn = new System.Windows.Forms.Button();
             this.sideBarTimer = new System.Windows.Forms.Timer(this.components);
             this.panelTT = new System.Windows.Forms.Panel();
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbTenUser = new System.Windows.Forms.Label();
             this.lbWelcome = new System.Windows.Forms.Label();
             this.DateLabel = new System.Windows.Forms.Label();
             this.TimeLabel = new System.Windows.Forms.Label();
@@ -62,30 +63,29 @@
             this.timerMenu = new System.Windows.Forms.Timer(this.components);
             this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
-            this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.sidebarPanel.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MenuExpand)).BeginInit();
-            this.panel2.SuspendLayout();
-            this.panel4.SuspendLayout();
+            this.panelDB.SuspendLayout();
+            this.panelBuy.SuspendLayout();
             this.panelQL.SuspendLayout();
-            this.panel6.SuspendLayout();
+            this.panelTke.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panelTK.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // sidebarPanel
             // 
             this.sidebarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.sidebarPanel.Controls.Add(this.panel1);
-            this.sidebarPanel.Controls.Add(this.panel2);
-            this.sidebarPanel.Controls.Add(this.panel4);
+            this.sidebarPanel.Controls.Add(this.panelMenu);
+            this.sidebarPanel.Controls.Add(this.panelDB);
+            this.sidebarPanel.Controls.Add(this.panelBuy);
             this.sidebarPanel.Controls.Add(this.panelQL);
-            this.sidebarPanel.Controls.Add(this.panel6);
+            this.sidebarPanel.Controls.Add(this.panelTke);
             this.sidebarPanel.Controls.Add(this.panel7);
             this.sidebarPanel.Controls.Add(this.panelTK);
             this.sidebarPanel.ForeColor = System.Drawing.Color.Transparent;
@@ -97,15 +97,15 @@
             this.sidebarPanel.Size = new System.Drawing.Size(188, 812);
             this.sidebarPanel.TabIndex = 0;
             // 
-            // panel1
+            // panelMenu
             // 
-            this.panel1.Controls.Add(this.MenuExpand);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(2, 2);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(193, 89);
-            this.panel1.TabIndex = 1;
+            this.panelMenu.Controls.Add(this.MenuExpand);
+            this.panelMenu.Controls.Add(this.label1);
+            this.panelMenu.Location = new System.Drawing.Point(2, 2);
+            this.panelMenu.Margin = new System.Windows.Forms.Padding(2);
+            this.panelMenu.Name = "panelMenu";
+            this.panelMenu.Size = new System.Drawing.Size(193, 89);
+            this.panelMenu.TabIndex = 1;
             // 
             // MenuExpand
             // 
@@ -132,15 +132,15 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Menu";
             // 
-            // panel2
+            // panelDB
             // 
-            this.panel2.Controls.Add(this.HomeBtn);
-            this.panel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel2.Location = new System.Drawing.Point(2, 95);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(193, 62);
-            this.panel2.TabIndex = 3;
+            this.panelDB.Controls.Add(this.HomeBtn);
+            this.panelDB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panelDB.Location = new System.Drawing.Point(2, 95);
+            this.panelDB.Margin = new System.Windows.Forms.Padding(2);
+            this.panelDB.Name = "panelDB";
+            this.panelDB.Size = new System.Drawing.Size(193, 62);
+            this.panelDB.TabIndex = 3;
             // 
             // HomeBtn
             // 
@@ -165,15 +165,15 @@
             this.HomeBtn.UseVisualStyleBackColor = false;
             this.HomeBtn.Click += new System.EventHandler(this.button1_Click);
             // 
-            // panel4
+            // panelBuy
             // 
-            this.panel4.Controls.Add(this.BuyBtn);
-            this.panel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel4.Location = new System.Drawing.Point(2, 161);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(193, 62);
-            this.panel4.TabIndex = 8;
+            this.panelBuy.Controls.Add(this.BuyBtn);
+            this.panelBuy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panelBuy.Location = new System.Drawing.Point(2, 161);
+            this.panelBuy.Margin = new System.Windows.Forms.Padding(2);
+            this.panelBuy.Name = "panelBuy";
+            this.panelBuy.Size = new System.Drawing.Size(193, 62);
+            this.panelBuy.TabIndex = 8;
             // 
             // BuyBtn
             // 
@@ -202,8 +202,8 @@
             this.panelQL.Controls.Add(this.btNCC);
             this.panelQL.Controls.Add(this.btSP);
             this.panelQL.Controls.Add(this.btDM);
-            this.panelQL.Controls.Add(this.btNV);
             this.panelQL.Controls.Add(this.ManageBtn);
+            this.panelQL.Controls.Add(this.btNV);
             this.panelQL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panelQL.Location = new System.Drawing.Point(2, 227);
             this.panelQL.Margin = new System.Windows.Forms.Padding(2);
@@ -224,7 +224,7 @@
             this.btKH.ForeColor = System.Drawing.SystemColors.Control;
             this.btKH.Image = global::Project_01.Properties.Resources.icons8_dot_24;
             this.btKH.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btKH.Location = new System.Drawing.Point(-6, 194);
+            this.btKH.Location = new System.Drawing.Point(-2, 150);
             this.btKH.Margin = new System.Windows.Forms.Padding(2);
             this.btKH.Name = "btKH";
             this.btKH.Size = new System.Drawing.Size(201, 48);
@@ -245,7 +245,7 @@
             this.btNCC.ForeColor = System.Drawing.SystemColors.Control;
             this.btNCC.Image = global::Project_01.Properties.Resources.icons8_dot_24;
             this.btNCC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btNCC.Location = new System.Drawing.Point(-6, 234);
+            this.btNCC.Location = new System.Drawing.Point(-2, 237);
             this.btNCC.Margin = new System.Windows.Forms.Padding(2);
             this.btNCC.Name = "btNCC";
             this.btNCC.Size = new System.Drawing.Size(201, 58);
@@ -266,7 +266,7 @@
             this.btSP.ForeColor = System.Drawing.SystemColors.Control;
             this.btSP.Image = global::Project_01.Properties.Resources.icons8_dot_24;
             this.btSP.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btSP.Location = new System.Drawing.Point(-6, 152);
+            this.btSP.Location = new System.Drawing.Point(-2, 108);
             this.btSP.Margin = new System.Windows.Forms.Padding(2);
             this.btSP.Name = "btSP";
             this.btSP.Size = new System.Drawing.Size(201, 48);
@@ -287,7 +287,7 @@
             this.btDM.ForeColor = System.Drawing.SystemColors.Control;
             this.btDM.Image = global::Project_01.Properties.Resources.icons8_dot_24;
             this.btDM.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btDM.Location = new System.Drawing.Point(-6, 109);
+            this.btDM.Location = new System.Drawing.Point(-2, 65);
             this.btDM.Margin = new System.Windows.Forms.Padding(2);
             this.btDM.Name = "btDM";
             this.btDM.Size = new System.Drawing.Size(201, 48);
@@ -296,27 +296,6 @@
             this.btDM.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btDM.UseVisualStyleBackColor = false;
             this.btDM.Click += new System.EventHandler(this.btDM_Click);
-            // 
-            // btNV
-            // 
-            this.btNV.BackColor = System.Drawing.Color.Transparent;
-            this.btNV.FlatAppearance.BorderSize = 0;
-            this.btNV.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btNV.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.btNV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btNV.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btNV.ForeColor = System.Drawing.SystemColors.Control;
-            this.btNV.Image = global::Project_01.Properties.Resources.icons8_dot_24;
-            this.btNV.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btNV.Location = new System.Drawing.Point(-6, 63);
-            this.btNV.Margin = new System.Windows.Forms.Padding(2);
-            this.btNV.Name = "btNV";
-            this.btNV.Size = new System.Drawing.Size(201, 48);
-            this.btNV.TabIndex = 6;
-            this.btNV.Text = "       Quản lý nhân viên";
-            this.btNV.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btNV.UseVisualStyleBackColor = false;
-            this.btNV.Click += new System.EventHandler(this.btNV_Click);
             // 
             // ManageBtn
             // 
@@ -339,15 +318,36 @@
             this.ManageBtn.UseVisualStyleBackColor = false;
             this.ManageBtn.Click += new System.EventHandler(this.button3_Click);
             // 
-            // panel6
+            // btNV
             // 
-            this.panel6.Controls.Add(this.AnalyticBtn);
-            this.panel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel6.Location = new System.Drawing.Point(2, 291);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(193, 69);
-            this.panel6.TabIndex = 8;
+            this.btNV.BackColor = System.Drawing.Color.Transparent;
+            this.btNV.FlatAppearance.BorderSize = 0;
+            this.btNV.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btNV.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.btNV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btNV.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btNV.ForeColor = System.Drawing.SystemColors.Control;
+            this.btNV.Image = global::Project_01.Properties.Resources.icons8_dot_24;
+            this.btNV.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btNV.Location = new System.Drawing.Point(-2, 191);
+            this.btNV.Margin = new System.Windows.Forms.Padding(2);
+            this.btNV.Name = "btNV";
+            this.btNV.Size = new System.Drawing.Size(201, 48);
+            this.btNV.TabIndex = 6;
+            this.btNV.Text = "       Quản lý nhân viên";
+            this.btNV.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btNV.UseVisualStyleBackColor = false;
+            this.btNV.Click += new System.EventHandler(this.btNV_Click);
+            // 
+            // panelTke
+            // 
+            this.panelTke.Controls.Add(this.AnalyticBtn);
+            this.panelTke.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panelTke.Location = new System.Drawing.Point(2, 291);
+            this.panelTke.Margin = new System.Windows.Forms.Padding(2);
+            this.panelTke.Name = "panelTke";
+            this.panelTke.Size = new System.Drawing.Size(193, 69);
+            this.panelTke.TabIndex = 8;
             // 
             // AnalyticBtn
             // 
@@ -365,7 +365,7 @@
             this.AnalyticBtn.Name = "AnalyticBtn";
             this.AnalyticBtn.Size = new System.Drawing.Size(195, 89);
             this.AnalyticBtn.TabIndex = 6;
-            this.AnalyticBtn.Text = "                Thống kê";
+            this.AnalyticBtn.Text = "                Hóa đơn -\r\n                Thống kê ";
             this.AnalyticBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AnalyticBtn.UseVisualStyleBackColor = false;
             this.AnalyticBtn.Click += new System.EventHandler(this.AnalyticBtn_Click);
@@ -403,7 +403,7 @@
             // 
             // panelTK
             // 
-            this.panelTK.Controls.Add(this.ExitBtn);
+            this.panelTK.Controls.Add(this.LogoutBtn);
             this.panelTK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panelTK.Location = new System.Drawing.Point(2, 437);
             this.panelTK.Margin = new System.Windows.Forms.Padding(2);
@@ -411,26 +411,26 @@
             this.panelTK.Size = new System.Drawing.Size(193, 67);
             this.panelTK.TabIndex = 7;
             // 
-            // ExitBtn
+            // LogoutBtn
             // 
-            this.ExitBtn.BackColor = System.Drawing.Color.Transparent;
-            this.ExitBtn.FlatAppearance.BorderSize = 0;
-            this.ExitBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.ExitBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.ExitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ExitBtn.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ExitBtn.ForeColor = System.Drawing.SystemColors.Control;
-            this.ExitBtn.Image = global::Project_01.Properties.Resources.icons8_exit_48;
-            this.ExitBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ExitBtn.Location = new System.Drawing.Point(-4, -16);
-            this.ExitBtn.Margin = new System.Windows.Forms.Padding(2);
-            this.ExitBtn.Name = "ExitBtn";
-            this.ExitBtn.Size = new System.Drawing.Size(197, 94);
-            this.ExitBtn.TabIndex = 9;
-            this.ExitBtn.Text = "                Thoát";
-            this.ExitBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ExitBtn.UseVisualStyleBackColor = false;
-            this.ExitBtn.Click += new System.EventHandler(this.button6_Click);
+            this.LogoutBtn.BackColor = System.Drawing.Color.Transparent;
+            this.LogoutBtn.FlatAppearance.BorderSize = 0;
+            this.LogoutBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.LogoutBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.LogoutBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LogoutBtn.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LogoutBtn.ForeColor = System.Drawing.SystemColors.Control;
+            this.LogoutBtn.Image = global::Project_01.Properties.Resources.icons8_exit_48;
+            this.LogoutBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LogoutBtn.Location = new System.Drawing.Point(-4, -16);
+            this.LogoutBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.LogoutBtn.Name = "LogoutBtn";
+            this.LogoutBtn.Size = new System.Drawing.Size(197, 94);
+            this.LogoutBtn.TabIndex = 9;
+            this.LogoutBtn.Text = "                Đăng xuất";
+            this.LogoutBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LogoutBtn.UseVisualStyleBackColor = false;
+            this.LogoutBtn.Click += new System.EventHandler(this.button6_Click);
             // 
             // sideBarTimer
             // 
@@ -451,7 +451,7 @@
             // 
             this.kryptonPanel1.Controls.Add(this.bunifuPictureBox1);
             this.kryptonPanel1.Controls.Add(this.pictureBox1);
-            this.kryptonPanel1.Controls.Add(this.label2);
+            this.kryptonPanel1.Controls.Add(this.lbTenUser);
             this.kryptonPanel1.Controls.Add(this.lbWelcome);
             this.kryptonPanel1.Controls.Add(this.DateLabel);
             this.kryptonPanel1.Controls.Add(this.TimeLabel);
@@ -464,6 +464,23 @@
             this.kryptonPanel1.TabIndex = 2;
             this.kryptonPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.kryptonPanel1_Paint);
             // 
+            // bunifuPictureBox1
+            // 
+            this.bunifuPictureBox1.AllowFocused = false;
+            this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox1.AutoSizeHeight = true;
+            this.bunifuPictureBox1.BorderRadius = 43;
+            this.bunifuPictureBox1.Image = global::Project_01.Properties.Resources._6427724;
+            this.bunifuPictureBox1.IsCircle = true;
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(529, 2);
+            this.bunifuPictureBox1.Name = "bunifuPictureBox1";
+            this.bunifuPictureBox1.Size = new System.Drawing.Size(86, 86);
+            this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBox1.TabIndex = 6;
+            this.bunifuPictureBox1.TabStop = false;
+            this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            this.bunifuPictureBox1.Click += new System.EventHandler(this.bunifuPictureBox1_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
@@ -475,15 +492,17 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
-            // label2
+            // lbTenUser
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(173, 38);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "label2";
+            this.lbTenUser.AutoSize = true;
+            this.lbTenUser.BackColor = System.Drawing.Color.Transparent;
+            this.lbTenUser.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbTenUser.Location = new System.Drawing.Point(173, 35);
+            this.lbTenUser.Name = "lbTenUser";
+            this.lbTenUser.Size = new System.Drawing.Size(54, 21);
+            this.lbTenUser.TabIndex = 3;
+            this.lbTenUser.Text = "label2";
+            this.lbTenUser.Click += new System.EventHandler(this.label2_Click);
             // 
             // lbWelcome
             // 
@@ -614,23 +633,6 @@
             this.kryptonPalette1.HeaderStyles.HeaderForm.StateCommon.ButtonEdgeInset = 5;
             this.kryptonPalette1.HeaderStyles.HeaderForm.StateCommon.ButtonPadding = new System.Windows.Forms.Padding(10, -1, -1, -1);
             // 
-            // bunifuPictureBox1
-            // 
-            this.bunifuPictureBox1.AllowFocused = false;
-            this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox1.AutoSizeHeight = true;
-            this.bunifuPictureBox1.BorderRadius = 43;
-            this.bunifuPictureBox1.Image = global::Project_01.Properties.Resources._6427724;
-            this.bunifuPictureBox1.IsCircle = true;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(529, 2);
-            this.bunifuPictureBox1.Name = "bunifuPictureBox1";
-            this.bunifuPictureBox1.Size = new System.Drawing.Size(86, 86);
-            this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuPictureBox1.TabIndex = 6;
-            this.bunifuPictureBox1.TabStop = false;
-            this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
-            this.bunifuPictureBox1.Click += new System.EventHandler(this.bunifuPictureBox1_Click);
-            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -651,42 +653,42 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Home_FormClosed);
             this.Load += new System.EventHandler(this.Home_Load);
             this.sidebarPanel.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panelMenu.ResumeLayout(false);
+            this.panelMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MenuExpand)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
+            this.panelDB.ResumeLayout(false);
+            this.panelBuy.ResumeLayout(false);
             this.panelQL.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
+            this.panelTke.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panelTK.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             this.kryptonPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.FlowLayoutPanel sidebarPanel;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panelMenu;
+        private System.Windows.Forms.Panel panelDB;
         private System.Windows.Forms.Button HomeBtn;
         private System.Windows.Forms.Button BuyBtn;
         private System.Windows.Forms.Button ManageBtn;
         private System.Windows.Forms.Button AnalyticBtn;
         private System.Windows.Forms.Button InfoApp;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panelBuy;
         private System.Windows.Forms.Panel panelQL;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panelTK;
-        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panelTke;
         private System.Windows.Forms.Timer sideBarTimer;
         private System.Windows.Forms.PictureBox MenuExpand;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Button ExitBtn;
+        private System.Windows.Forms.Button LogoutBtn;
         private System.Windows.Forms.Panel panelTT;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel1;
         private System.Windows.Forms.Label DateLabel;
@@ -699,7 +701,7 @@
         private System.Windows.Forms.Button btKH;
         private System.Windows.Forms.Timer timerMenu;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbTenUser;
         private System.Windows.Forms.Label lbWelcome;
         private Bunifu.UI.WinForms.BunifuFormDock bunifuFormDock1;
         private ComponentFactory.Krypton.Toolkit.KryptonPalette kryptonPalette1;

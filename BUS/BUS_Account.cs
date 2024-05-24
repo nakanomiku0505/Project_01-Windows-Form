@@ -33,6 +33,7 @@ namespace BUS
                 }
                 else if (quyen == "0")
                 {
+
                     return "Login Success! (Role: Admin)";
                 }
                 else
@@ -115,6 +116,9 @@ namespace BUS
                 return "1";
             }
         }
-        
+        public DataTable layuser(string tk)
+        {
+            return account.layuser(tk);
+        }
     }
 }

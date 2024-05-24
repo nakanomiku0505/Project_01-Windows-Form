@@ -101,9 +101,9 @@ namespace DAL
 
             return result;
         }
-        public DataTable layusers()
+        public DataTable layuser(string tk)
         {
-            string sql = "SELECT A.users,N.MaNV, N.TenNV\r\nFROM NhanVien N\r\nLEFT JOIN Accounts A ON N.users = A.users;";
+            string sql = string.Format("SELECT A.users,N.MaNV, N.TenNV\r\nFROM NhanVien N\r\nLEFT JOIN Accounts A ON N.users = A.users where A.users = '{0}';",tk);
             return acc.getData(sql);
         }
         public string layusers(string tk)

@@ -53,7 +53,6 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties14 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties15 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties16 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties17 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties18 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties19 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -63,6 +62,13 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties23 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties24 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.listSP = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.maSPDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenSPDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.giaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.motaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hinhAnhDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.sLDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.maLoaiSPDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sPBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.qLCHMTDataSet5 = new Project_01.QLCHMTDataSet5();
             this.bunifuGroupBox1 = new Bunifu.UI.WinForms.BunifuGroupBox();
@@ -80,27 +86,18 @@
             this.cbLoaiSP = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.tbGia = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.btThemAnh = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.tbTenSP = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pImage = new System.Windows.Forms.PictureBox();
             this.btTim = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.tbTim = new Bunifu.UI.WinForms.BunifuTextBox();
             this.sPTableAdapter = new Project_01.QLCHMTDataSet5TableAdapters.SPTableAdapter();
-            this.maSPDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tenSPDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.giaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.motaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hinhAnhDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
-            this.sLDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.maLoaiSPDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lbTenLSP = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.listSP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sPBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLCHMTDataSet5)).BeginInit();
             this.bunifuGroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cbLoaiSP)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pImage)).BeginInit();
             this.SuspendLayout();
             // 
             // listSP
@@ -177,6 +174,57 @@
             this.listSP.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             this.listSP.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.listSP_CellClick);
             // 
+            // maSPDataGridViewTextBoxColumn
+            // 
+            this.maSPDataGridViewTextBoxColumn.DataPropertyName = "MaSP";
+            this.maSPDataGridViewTextBoxColumn.HeaderText = "Mã SP";
+            this.maSPDataGridViewTextBoxColumn.Name = "maSPDataGridViewTextBoxColumn";
+            this.maSPDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // tenSPDataGridViewTextBoxColumn
+            // 
+            this.tenSPDataGridViewTextBoxColumn.DataPropertyName = "TenSP";
+            this.tenSPDataGridViewTextBoxColumn.HeaderText = "Tên SP";
+            this.tenSPDataGridViewTextBoxColumn.Name = "tenSPDataGridViewTextBoxColumn";
+            this.tenSPDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // giaDataGridViewTextBoxColumn
+            // 
+            this.giaDataGridViewTextBoxColumn.DataPropertyName = "Gia";
+            this.giaDataGridViewTextBoxColumn.HeaderText = "Giá";
+            this.giaDataGridViewTextBoxColumn.Name = "giaDataGridViewTextBoxColumn";
+            this.giaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // motaDataGridViewTextBoxColumn
+            // 
+            this.motaDataGridViewTextBoxColumn.DataPropertyName = "Mota";
+            this.motaDataGridViewTextBoxColumn.HeaderText = "Mô tả";
+            this.motaDataGridViewTextBoxColumn.Name = "motaDataGridViewTextBoxColumn";
+            this.motaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.motaDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // hinhAnhDataGridViewImageColumn
+            // 
+            this.hinhAnhDataGridViewImageColumn.DataPropertyName = "HinhAnh";
+            this.hinhAnhDataGridViewImageColumn.HeaderText = "Hình ảnh";
+            this.hinhAnhDataGridViewImageColumn.Name = "hinhAnhDataGridViewImageColumn";
+            this.hinhAnhDataGridViewImageColumn.ReadOnly = true;
+            this.hinhAnhDataGridViewImageColumn.Visible = false;
+            // 
+            // sLDataGridViewTextBoxColumn
+            // 
+            this.sLDataGridViewTextBoxColumn.DataPropertyName = "SL";
+            this.sLDataGridViewTextBoxColumn.HeaderText = "Số lượng";
+            this.sLDataGridViewTextBoxColumn.Name = "sLDataGridViewTextBoxColumn";
+            this.sLDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // maLoaiSPDataGridViewTextBoxColumn
+            // 
+            this.maLoaiSPDataGridViewTextBoxColumn.DataPropertyName = "MaLoaiSP";
+            this.maLoaiSPDataGridViewTextBoxColumn.HeaderText = "Mã loại SP";
+            this.maLoaiSPDataGridViewTextBoxColumn.Name = "maLoaiSPDataGridViewTextBoxColumn";
+            this.maLoaiSPDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
             // sPBindingSource
             // 
             this.sPBindingSource.DataMember = "SP";
@@ -193,6 +241,7 @@
             this.bunifuGroupBox1.BorderColor = System.Drawing.Color.Blue;
             this.bunifuGroupBox1.BorderRadius = 10;
             this.bunifuGroupBox1.BorderThickness = 2;
+            this.bunifuGroupBox1.Controls.Add(this.lbTenLSP);
             this.bunifuGroupBox1.Controls.Add(this.lbTenLoaiSP);
             this.bunifuGroupBox1.Controls.Add(this.btXoa);
             this.bunifuGroupBox1.Controls.Add(this.btSua);
@@ -207,11 +256,9 @@
             this.bunifuGroupBox1.Controls.Add(this.cbLoaiSP);
             this.bunifuGroupBox1.Controls.Add(this.tbGia);
             this.bunifuGroupBox1.Controls.Add(this.label3);
-            this.bunifuGroupBox1.Controls.Add(this.btThemAnh);
             this.bunifuGroupBox1.Controls.Add(this.tbTenSP);
             this.bunifuGroupBox1.Controls.Add(this.label2);
             this.bunifuGroupBox1.Controls.Add(this.label1);
-            this.bunifuGroupBox1.Controls.Add(this.pImage);
             this.bunifuGroupBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuGroupBox1.ForeColor = System.Drawing.Color.Black;
             this.bunifuGroupBox1.LabelAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -228,7 +275,7 @@
             // 
             this.lbTenLoaiSP.AutoSize = true;
             this.lbTenLoaiSP.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lbTenLoaiSP.Location = new System.Drawing.Point(359, 100);
+            this.lbTenLoaiSP.Location = new System.Drawing.Point(80, 122);
             this.lbTenLoaiSP.Name = "lbTenLoaiSP";
             this.lbTenLoaiSP.Size = new System.Drawing.Size(0, 17);
             this.lbTenLoaiSP.TabIndex = 26;
@@ -321,6 +368,7 @@
             this.btXoa.TextMarginLeft = 0;
             this.btXoa.TextPadding = new System.Windows.Forms.Padding(0);
             this.btXoa.UseDefaultRadiusAndThickness = true;
+            this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
             // 
             // btSua
             // 
@@ -410,6 +458,7 @@
             this.btSua.TextMarginLeft = 0;
             this.btSua.TextPadding = new System.Windows.Forms.Padding(0);
             this.btSua.UseDefaultRadiusAndThickness = true;
+            this.btSua.Click += new System.EventHandler(this.btSua_Click);
             // 
             // btThem
             // 
@@ -548,7 +597,7 @@
             this.btClear.IdleIconLeftImage = global::Project_01.Properties.Resources.icons8_refresh_96;
             this.btClear.IdleIconRightImage = null;
             this.btClear.IndicateFocus = false;
-            this.btClear.Location = new System.Drawing.Point(166, 279);
+            this.btClear.Location = new System.Drawing.Point(436, 291);
             this.btClear.Name = "btClear";
             this.btClear.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btClear.OnDisabledState.BorderRadius = 10;
@@ -618,7 +667,7 @@
             this.tbMaSP.IconRight = null;
             this.tbMaSP.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.tbMaSP.Lines = new string[0];
-            this.tbMaSP.Location = new System.Drawing.Point(362, 27);
+            this.tbMaSP.Location = new System.Drawing.Point(83, 49);
             this.tbMaSP.MaximumSize = new System.Drawing.Size(118, 33);
             this.tbMaSP.MaxLength = 32767;
             this.tbMaSP.MinimumSize = new System.Drawing.Size(1, 1);
@@ -672,7 +721,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(285, 29);
+            this.label6.Location = new System.Drawing.Point(6, 51);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(71, 25);
             this.label6.TabIndex = 16;
@@ -788,7 +837,7 @@
             this.tbSL.IconRight = null;
             this.tbSL.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.tbSL.Lines = new string[0];
-            this.tbSL.Location = new System.Drawing.Point(289, 291);
+            this.tbSL.Location = new System.Drawing.Point(288, 240);
             this.tbSL.MaxLength = 32767;
             this.tbSL.MinimumSize = new System.Drawing.Size(1, 1);
             this.tbSL.Modified = false;
@@ -838,7 +887,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(284, 263);
+            this.label4.Location = new System.Drawing.Point(288, 212);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(94, 25);
             this.label4.TabIndex = 9;
@@ -848,7 +897,7 @@
             // 
             this.cbLoaiSP.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbLoaiSP.DropDownWidth = 183;
-            this.cbLoaiSP.Location = new System.Drawing.Point(358, 68);
+            this.cbLoaiSP.Location = new System.Drawing.Point(79, 90);
             this.cbLoaiSP.Name = "cbLoaiSP";
             this.cbLoaiSP.Size = new System.Drawing.Size(191, 29);
             this.cbLoaiSP.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -892,7 +941,7 @@
             this.tbGia.IconRight = null;
             this.tbGia.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.tbGia.Lines = new string[0];
-            this.tbGia.Location = new System.Drawing.Point(289, 215);
+            this.tbGia.Location = new System.Drawing.Point(10, 241);
             this.tbGia.MaxLength = 32767;
             this.tbGia.MinimumSize = new System.Drawing.Size(1, 1);
             this.tbGia.Modified = false;
@@ -943,101 +992,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(285, 190);
+            this.label3.Location = new System.Drawing.Point(6, 216);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(45, 25);
             this.label3.TabIndex = 6;
             this.label3.Text = "Giá:";
-            // 
-            // btThemAnh
-            // 
-            this.btThemAnh.AllowAnimations = true;
-            this.btThemAnh.AllowMouseEffects = true;
-            this.btThemAnh.AllowToggling = false;
-            this.btThemAnh.AnimationSpeed = 200;
-            this.btThemAnh.AutoGenerateColors = false;
-            this.btThemAnh.AutoRoundBorders = false;
-            this.btThemAnh.AutoSizeLeftIcon = true;
-            this.btThemAnh.AutoSizeRightIcon = true;
-            this.btThemAnh.BackColor = System.Drawing.Color.Transparent;
-            this.btThemAnh.BackColor1 = System.Drawing.Color.DodgerBlue;
-            this.btThemAnh.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btThemAnh.BackgroundImage")));
-            this.btThemAnh.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btThemAnh.ButtonText = "Thêm ảnh...";
-            this.btThemAnh.ButtonTextMarginLeft = 0;
-            this.btThemAnh.ColorContrastOnClick = 45;
-            this.btThemAnh.ColorContrastOnHover = 45;
-            this.btThemAnh.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges5.BottomLeft = true;
-            borderEdges5.BottomRight = true;
-            borderEdges5.TopLeft = true;
-            borderEdges5.TopRight = true;
-            this.btThemAnh.CustomizableEdges = borderEdges5;
-            this.btThemAnh.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btThemAnh.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btThemAnh.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btThemAnh.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btThemAnh.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btThemAnh.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btThemAnh.ForeColor = System.Drawing.Color.White;
-            this.btThemAnh.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btThemAnh.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.btThemAnh.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.btThemAnh.IconMarginLeft = 11;
-            this.btThemAnh.IconPadding = 10;
-            this.btThemAnh.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btThemAnh.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.btThemAnh.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.btThemAnh.IconSize = 25;
-            this.btThemAnh.IdleBorderColor = System.Drawing.Color.DodgerBlue;
-            this.btThemAnh.IdleBorderRadius = 10;
-            this.btThemAnh.IdleBorderThickness = 5;
-            this.btThemAnh.IdleFillColor = System.Drawing.Color.DodgerBlue;
-            this.btThemAnh.IdleIconLeftImage = null;
-            this.btThemAnh.IdleIconRightImage = null;
-            this.btThemAnh.IndicateFocus = false;
-            this.btThemAnh.Location = new System.Drawing.Point(6, 279);
-            this.btThemAnh.Name = "btThemAnh";
-            this.btThemAnh.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btThemAnh.OnDisabledState.BorderRadius = 10;
-            this.btThemAnh.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btThemAnh.OnDisabledState.BorderThickness = 5;
-            this.btThemAnh.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btThemAnh.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btThemAnh.OnDisabledState.IconLeftImage = null;
-            this.btThemAnh.OnDisabledState.IconRightImage = null;
-            this.btThemAnh.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.btThemAnh.onHoverState.BorderRadius = 10;
-            this.btThemAnh.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btThemAnh.onHoverState.BorderThickness = 5;
-            this.btThemAnh.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.btThemAnh.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.btThemAnh.onHoverState.IconLeftImage = null;
-            this.btThemAnh.onHoverState.IconRightImage = null;
-            this.btThemAnh.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.btThemAnh.OnIdleState.BorderRadius = 10;
-            this.btThemAnh.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btThemAnh.OnIdleState.BorderThickness = 5;
-            this.btThemAnh.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
-            this.btThemAnh.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btThemAnh.OnIdleState.IconLeftImage = null;
-            this.btThemAnh.OnIdleState.IconRightImage = null;
-            this.btThemAnh.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.btThemAnh.OnPressedState.BorderRadius = 10;
-            this.btThemAnh.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btThemAnh.OnPressedState.BorderThickness = 5;
-            this.btThemAnh.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.btThemAnh.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.btThemAnh.OnPressedState.IconLeftImage = null;
-            this.btThemAnh.OnPressedState.IconRightImage = null;
-            this.btThemAnh.Size = new System.Drawing.Size(112, 39);
-            this.btThemAnh.TabIndex = 5;
-            this.btThemAnh.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btThemAnh.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btThemAnh.TextMarginLeft = 0;
-            this.btThemAnh.TextPadding = new System.Windows.Forms.Padding(0);
-            this.btThemAnh.UseDefaultRadiusAndThickness = true;
-            this.btThemAnh.Click += new System.EventHandler(this.btThemAnh_Click);
             // 
             // tbTenSP
             // 
@@ -1066,7 +1025,7 @@
             this.tbTenSP.IconRight = null;
             this.tbTenSP.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.tbTenSP.Lines = new string[0];
-            this.tbTenSP.Location = new System.Drawing.Point(290, 146);
+            this.tbTenSP.Location = new System.Drawing.Point(11, 168);
             this.tbTenSP.MaxLength = 32767;
             this.tbTenSP.MinimumSize = new System.Drawing.Size(1, 1);
             this.tbTenSP.Modified = false;
@@ -1102,7 +1061,7 @@
             this.tbTenSP.SelectionLength = 0;
             this.tbTenSP.SelectionStart = 0;
             this.tbTenSP.ShortcutsEnabled = true;
-            this.tbTenSP.Size = new System.Drawing.Size(260, 45);
+            this.tbTenSP.Size = new System.Drawing.Size(434, 45);
             this.tbTenSP.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.tbTenSP.TabIndex = 4;
             this.tbTenSP.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1116,7 +1075,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(285, 118);
+            this.label2.Location = new System.Drawing.Point(6, 140);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(72, 25);
             this.label2.TabIndex = 3;
@@ -1125,21 +1084,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(284, 68);
+            this.label1.Location = new System.Drawing.Point(5, 90);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "Loại SP:";
-            // 
-            // pImage
-            // 
-            this.pImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pImage.Location = new System.Drawing.Point(6, 52);
-            this.pImage.Name = "pImage";
-            this.pImage.Size = new System.Drawing.Size(272, 221);
-            this.pImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pImage.TabIndex = 0;
-            this.pImage.TabStop = false;
             // 
             // btTim
             // 
@@ -1184,6 +1133,7 @@
             this.btTim.TabIndex = 14;
             this.btTim.Values.Image = global::Project_01.Properties.Resources.icons8_search_96;
             this.btTim.Values.Text = "";
+            this.btTim.Click += new System.EventHandler(this.btTim_Click);
             // 
             // tbTim
             // 
@@ -1263,56 +1213,15 @@
             // 
             this.sPTableAdapter.ClearBeforeFill = true;
             // 
-            // maSPDataGridViewTextBoxColumn
+            // lbTenLSP
             // 
-            this.maSPDataGridViewTextBoxColumn.DataPropertyName = "MaSP";
-            this.maSPDataGridViewTextBoxColumn.HeaderText = "Mã SP";
-            this.maSPDataGridViewTextBoxColumn.Name = "maSPDataGridViewTextBoxColumn";
-            this.maSPDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // tenSPDataGridViewTextBoxColumn
-            // 
-            this.tenSPDataGridViewTextBoxColumn.DataPropertyName = "TenSP";
-            this.tenSPDataGridViewTextBoxColumn.HeaderText = "Tên SP";
-            this.tenSPDataGridViewTextBoxColumn.Name = "tenSPDataGridViewTextBoxColumn";
-            this.tenSPDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // giaDataGridViewTextBoxColumn
-            // 
-            this.giaDataGridViewTextBoxColumn.DataPropertyName = "Gia";
-            this.giaDataGridViewTextBoxColumn.HeaderText = "Giá";
-            this.giaDataGridViewTextBoxColumn.Name = "giaDataGridViewTextBoxColumn";
-            this.giaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // motaDataGridViewTextBoxColumn
-            // 
-            this.motaDataGridViewTextBoxColumn.DataPropertyName = "Mota";
-            this.motaDataGridViewTextBoxColumn.HeaderText = "Mô tả";
-            this.motaDataGridViewTextBoxColumn.Name = "motaDataGridViewTextBoxColumn";
-            this.motaDataGridViewTextBoxColumn.ReadOnly = true;
-            this.motaDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // hinhAnhDataGridViewImageColumn
-            // 
-            this.hinhAnhDataGridViewImageColumn.DataPropertyName = "HinhAnh";
-            this.hinhAnhDataGridViewImageColumn.HeaderText = "Hình ảnh";
-            this.hinhAnhDataGridViewImageColumn.Name = "hinhAnhDataGridViewImageColumn";
-            this.hinhAnhDataGridViewImageColumn.ReadOnly = true;
-            this.hinhAnhDataGridViewImageColumn.Visible = false;
-            // 
-            // sLDataGridViewTextBoxColumn
-            // 
-            this.sLDataGridViewTextBoxColumn.DataPropertyName = "SL";
-            this.sLDataGridViewTextBoxColumn.HeaderText = "Số lượng";
-            this.sLDataGridViewTextBoxColumn.Name = "sLDataGridViewTextBoxColumn";
-            this.sLDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // maLoaiSPDataGridViewTextBoxColumn
-            // 
-            this.maLoaiSPDataGridViewTextBoxColumn.DataPropertyName = "MaLoaiSP";
-            this.maLoaiSPDataGridViewTextBoxColumn.HeaderText = "Mã loại SP";
-            this.maLoaiSPDataGridViewTextBoxColumn.Name = "maLoaiSPDataGridViewTextBoxColumn";
-            this.maLoaiSPDataGridViewTextBoxColumn.ReadOnly = true;
+            this.lbTenLSP.AutoSize = true;
+            this.lbTenLSP.Location = new System.Drawing.Point(283, 92);
+            this.lbTenLSP.Name = "lbTenLSP";
+            this.lbTenLSP.Size = new System.Drawing.Size(52, 25);
+            this.lbTenLSP.TabIndex = 36;
+            this.lbTenLSP.Text = "TLSP";
+            this.lbTenLSP.Click += new System.EventHandler(this.lbTenLSP_Click);
             // 
             // QLSP
             // 
@@ -1332,7 +1241,6 @@
             this.bunifuGroupBox1.ResumeLayout(false);
             this.bunifuGroupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cbLoaiSP)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pImage)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1341,11 +1249,9 @@
 
         private Bunifu.UI.WinForms.BunifuDataGridView listSP;
         private Bunifu.UI.WinForms.BunifuGroupBox bunifuGroupBox1;
-        private System.Windows.Forms.PictureBox pImage;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private Bunifu.UI.WinForms.BunifuTextBox tbTenSP;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btThemAnh;
         private System.Windows.Forms.Label label3;
         private Bunifu.UI.WinForms.BunifuTextBox tbGia;
         private ComponentFactory.Krypton.Toolkit.KryptonComboBox cbLoaiSP;
@@ -1372,5 +1278,6 @@
         private System.Windows.Forms.DataGridViewImageColumn hinhAnhDataGridViewImageColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn sLDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn maLoaiSPDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label lbTenLSP;
     }
 }

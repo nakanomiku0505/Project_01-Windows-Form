@@ -11,7 +11,7 @@ namespace DTO
         public string MaHDB { get; set; }
         public string MaNV { get; set; }
         public string MaKH {  get; set; }
-        public DateTime NgayBan { get; set; }
-        public float TongTien { get; set; }
+        public string NgayBan { get; set; }
+        public int TongTien { get; set; }
     }
 }
