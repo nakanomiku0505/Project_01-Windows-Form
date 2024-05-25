@@ -497,10 +497,10 @@
             // 
             this.lbTenUser.AutoSize = true;
             this.lbTenUser.BackColor = System.Drawing.Color.Transparent;
-            this.lbTenUser.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lbTenUser.Location = new System.Drawing.Point(173, 35);
+            this.lbTenUser.Font = new System.Drawing.Font("Script MT Bold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTenUser.Location = new System.Drawing.Point(161, 33);
             this.lbTenUser.Name = "lbTenUser";
-            this.lbTenUser.Size = new System.Drawing.Size(54, 21);
+            this.lbTenUser.Size = new System.Drawing.Size(65, 25);
             this.lbTenUser.TabIndex = 3;
             this.lbTenUser.Text = "label2";
             this.lbTenUser.Click += new System.EventHandler(this.label2_Click);

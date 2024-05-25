@@ -262,6 +262,9 @@
         6rxk6335UlrHzMysQbtIe/06EQBia7X+AJOOCEwaoLQlAAAAAElFTkSuQmCC
 </value>
   </data>
+  <metadata name="sPTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>307, 17</value>
+  </metadata>
   <data name="tbTim.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAfAAAAApCAYAAADK6nu1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -277,7 +280,4 @@
         vnwprW1mZmZH33na69fmAEBErdYf8wW0W6NECK8AAAAASUVORK5CYII=
 </value>
   </data>
-  <metadata name="sPTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>307, 17</value>
-  </metadata>
 </root>

@@ -42,13 +42,15 @@ namespace Project_01
             {
                 btNCC.Visible = true;
                 btNV.Visible = true;
-                
+                panelTke.Visible = true;
+                AnalyticBtn.Visible=true;
             }
             else 
             {
                 btNCC.Visible = false;
                 btNV.Visible = false;
-                
+                panelTke.Visible = false;
+                AnalyticBtn.Visible = false;
             }
         }
         public void Dashboard()
@@ -246,5 +248,7 @@ namespace Project_01
         {
 
         }
+
+        
     }
 }
