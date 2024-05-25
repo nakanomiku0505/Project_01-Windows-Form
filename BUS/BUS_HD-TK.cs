@@ -66,5 +66,9 @@ namespace BUS
                 return "0";
             }
         }
+        public DataTable getDataHDNew()
+        {
+            return hd.getDataHDNew();
+        }
     }
 }

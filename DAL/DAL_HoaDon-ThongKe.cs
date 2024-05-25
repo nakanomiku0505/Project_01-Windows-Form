@@ -61,5 +61,10 @@ namespace DAL
             db.Execute(sql);
             return true;
         }
+        public DataTable getDataHDNew()
+        {
+            string sql = "EXEC usp_HienThiHoaDonMoiNhat";
+            return db.getData(sql);
+        }
     }
 }

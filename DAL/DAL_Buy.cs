@@ -43,6 +43,7 @@ namespace DAL
             return db.getData(sql);
 
         }
+        
         public bool ThemHD(HoaDonBan hd)
         {
             string sql = string.Format("EXEC InsertHoaDon @MaNV = '{0}', @MaKH = '{1}', @NgayBan = '{2}', @TongTien = '{3}';",

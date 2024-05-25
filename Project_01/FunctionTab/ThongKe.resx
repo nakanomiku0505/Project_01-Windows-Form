@@ -173,7 +173,7 @@
         ATMNG+J1OcrgAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="bunifuButton1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btHDMonth.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIIAAABGCAYAAAAAekxfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAImSURBVHhe7Z0hchtRFAQFDQNzBMPAwMAcIdA30bLAQMMc
@@ -188,7 +188,7 @@
         PwR36zQ9z9f/V2W+nbkQC18V+3f7pR4fp+ftL8UDAMD75nD4CxEQDP4UPONeAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btThanhToan.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btHD.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIIAAABGCAYAAAAAekxfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIhSURBVHhe7Z0hklNhGAQjkUiOgEQikRwByU02DolEcgQk
