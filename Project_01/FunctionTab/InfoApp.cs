@@ -57,5 +57,10 @@ namespace Project_01.FunctionTab
             ProcessStartInfo sInfo = new ProcessStartInfo("https://x.com/sawaratsuki1004");
             Process.Start(sInfo);
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
