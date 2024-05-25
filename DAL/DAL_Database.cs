@@ -10,7 +10,7 @@ namespace DAL
 {
     public class DAL_Database
     {
-        string strcon = @"Data Source=LAPTOP-A34FEDCG\SQLEXPRESS;Initial Catalog=QLCHMT;Integrated Security=True;Encrypt=False";
+        string strcon = @"Data Source=.\SQLEXPRESS;Initial Catalog=QLCHMT;Integrated Security=True;Encrypt=False";
 
         public SqlConnection con;
         public SqlCommand cmd;
