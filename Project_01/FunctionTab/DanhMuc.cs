@@ -66,6 +66,10 @@ namespace Project_01.FunctionTab
             {
                 MessageBox.Show("Trùng mã loại sản phẩm.\nVui lòng thử lại.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            else if (result == "-3")
+            {
+                MessageBox.Show("Đã có loại hàng này.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             else
             {
                 MessageBox.Show("Thêm thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -82,27 +86,35 @@ namespace Project_01.FunctionTab
 
         private void btSua_Click(object sender, EventArgs e)
         {
-            LoaiSP ls = new LoaiSP();
-            ls.MaLoaiSP = tbMaLSP.Text;
-            ls.TenLoaiSP = tbTenLSP.Text;
-            ls.MoTa = tbMoTa.Text;
-            ls.MaNCC = tbMaNCC.Text;
-            string result = lsp.SuaLSP(ls);
-            if (result == "1")
+            if (tbMaLSP.Text == "")
             {
-                MessageBox.Show("Sửa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                ClearTB();
-                LoadDS();
-
-            }
-            else if (result == "-1")
-            {
-                MessageBox.Show("Các trường thông tin không được bỏ trống!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Chưa chọn loại sản phẩm nào.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                MessageBox.Show("Sửa thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                LoaiSP ls = new LoaiSP();
+                ls.MaLoaiSP = tbMaLSP.Text;
+                ls.TenLoaiSP = tbTenLSP.Text;
+                ls.MoTa = tbMoTa.Text;
+                ls.MaNCC = tbMaNCC.Text;
+                string result = lsp.SuaLSP(ls);
+                if (result == "1")
+                {
+                    MessageBox.Show("Sửa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ClearTB();
+                    LoadDS();
+
+                }
+                else if (result == "-1")
+                {
+                    MessageBox.Show("Các trường thông tin không được bỏ trống!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    MessageBox.Show("Sửa thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
+            
         }
 
         private void btClear_Click(object sender, EventArgs e)
@@ -148,6 +160,11 @@ namespace Project_01.FunctionTab
         }
 
         private void tbMaNCC_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbTenLSP_TextChanged(object sender, EventArgs e)
         {
 
         }

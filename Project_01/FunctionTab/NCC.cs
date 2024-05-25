@@ -65,6 +65,18 @@ namespace Project_01.FunctionTab
             {
                 MessageBox.Show("Trùng mã nhà cung cấp.\nVui lòng thử lại.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            else if (result == "-3")
+            {
+                MessageBox.Show("Đã có nhà cung cấp này.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (result == "-4")
+            {
+                MessageBox.Show("Định dạng số điện thoại sai.\nSố điện thoại chỉ có 10 số.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (result == "-5")
+            {
+                MessageBox.Show("Email không phù hợp.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             else
             {
                 MessageBox.Show("Thêm thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -73,28 +85,48 @@ namespace Project_01.FunctionTab
 
         private void btSua_Click(object sender, EventArgs e)
         {
-            NhaCungCap ls = new NhaCungCap();
-            ls.MaNCC = tbMaNCC.Text;
-            ls.TenNCC = tbTenNCC.Text;
-            ls.DiaChi = tbDC.Text;
-            ls.SDT = tbSDT.Text;
-            ls.Email = tbEmail.Text;
-            string result = nc.SuaNCC(ls);
-            if (result == "1")
+            if (tbMaNCC.Text == "")
             {
-                MessageBox.Show("Sửa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                LoadDS();
-                ClearTB();
-
-            }
-            else if (result == "-1")
-            {
-                MessageBox.Show("Các trường thông tin không được bỏ trống!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Chưa chọn nhà cung cấp nào.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                MessageBox.Show("Sửa thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                NhaCungCap ls = new NhaCungCap();
+                ls.MaNCC = tbMaNCC.Text;
+                ls.TenNCC = tbTenNCC.Text;
+                ls.DiaChi = tbDC.Text;
+                ls.SDT = tbSDT.Text;
+                ls.Email = tbEmail.Text;
+                string result = nc.SuaNCC(ls);
+                if (result == "1")
+                {
+                    MessageBox.Show("Sửa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LoadDS();
+                    ClearTB();
+
+                }
+                else if (result == "-1")
+                {
+                    MessageBox.Show("Các trường thông tin không được bỏ trống!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (result == "-3")
+                {
+                    MessageBox.Show("Đã có nhà cung cấp này.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (result == "-4")
+                {
+                    MessageBox.Show("Định dạng số điện thoại sai.\nSố điện thoại chỉ có 10 số.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (result == "-5")
+                {
+                    MessageBox.Show("Email không phù hợp.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    MessageBox.Show("Sửa thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
+            
         }
 
         private void btXoa_Click(object sender, EventArgs e)
@@ -138,6 +170,11 @@ namespace Project_01.FunctionTab
             {
                 LoadDS();
             }
+        }
+
+        private void bunifuGroupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

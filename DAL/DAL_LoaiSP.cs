@@ -21,6 +21,11 @@ namespace DAL
             string sql = "Select count(*) from LoaiSP where MaLoaiSP='" + ma.Trim() + "'";
             return db.CheckID(ma, sql);
         }
+        public int kiemtratentrung(string ma)
+        {
+            string sql = "Select count(*) from LoaiSP where TenLoaiSP = N'" + ma.Trim() + "'";
+            return db.CheckID(ma, sql);
+        }
         public bool ThemLSP(LoaiSP ls)
         {
             string sql = string.Format("EXEC InsertLoaiSP @TenLoaiSP = N'{0}',@MoTa = N'{1}',@MaNCC = '{2}'", ls.TenLoaiSP, ls.MoTa, ls.MaNCC);

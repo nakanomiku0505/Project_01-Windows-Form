@@ -34,7 +34,7 @@ namespace Project_01
             Login ln = new Login();
             ln.Show();
         }
-
+        
         private void tbEmail_TextChanged(object sender, EventArgs e)
         {
 
@@ -120,6 +120,11 @@ namespace Project_01
             {
                 tbPass.PasswordChar = '*';
             }
+        }
+
+        private void Register_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

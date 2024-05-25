@@ -793,6 +793,7 @@
             this.tbTenLSP.TextPlaceholder = "Nhập tên loại hàng...";
             this.tbTenLSP.UseSystemPasswordChar = false;
             this.tbTenLSP.WordWrap = true;
+            this.tbTenLSP.TextChanged += new System.EventHandler(this.tbTenLSP_TextChanged);
             // 
             // label2
             // 

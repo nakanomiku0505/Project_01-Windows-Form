@@ -84,6 +84,14 @@ namespace Project_01.FunctionTab
             {
                 MessageBox.Show("Trùng mã khách hàng.\nVui lòng thử lại.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            else if (result == "-4")
+            {
+                MessageBox.Show("Định dạng số điện thoại sai.\nSố điện thoại chỉ có 10 số.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (result == "-5")
+            {
+                MessageBox.Show("Email không phù hợp.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             else
             {
                 MessageBox.Show("Thêm thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -92,28 +100,44 @@ namespace Project_01.FunctionTab
 
         private void btSua_Click(object sender, EventArgs e)
         {
-            KhachHang ls = new KhachHang();
-            ls.MaKH = tbMaKH.Text;
-            ls.TenKH = tbTenKH.Text;
-            ls.DiaChi = tbDC.Text;
-            ls.SDT = tbSDT.Text;
-            ls.Email = tbEmail.Text;
-            string result = kh.SuaKH(ls);
-            if (result == "1")
+            if (tbMaKH.Text == "")
             {
-                MessageBox.Show("Sửa khách hàng thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                LoadDS();
-                ClearTB();
-
-            }
-            else if (result == "-1")
-            {
-                MessageBox.Show("Các trường thông tin không được bỏ trống!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Chưa chọn khách hàng nào.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                MessageBox.Show("Thêm thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                KhachHang ls = new KhachHang();
+                ls.MaKH = tbMaKH.Text;
+                ls.TenKH = tbTenKH.Text;
+                ls.DiaChi = tbDC.Text;
+                ls.SDT = tbSDT.Text;
+                ls.Email = tbEmail.Text;
+                string result = kh.SuaKH(ls);
+                if (result == "1")
+                {
+                    MessageBox.Show("Sửa khách hàng thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LoadDS();
+                    ClearTB();
+
+                }
+                else if (result == "-1")
+                {
+                    MessageBox.Show("Các trường thông tin không được bỏ trống!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (result == "-4")
+                {
+                    MessageBox.Show("Định dạng số điện thoại sai.\nSố điện thoại chỉ có 10 số.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (result == "-5")
+                {
+                    MessageBox.Show("Email không phù hợp.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    MessageBox.Show("Thêm thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
+            
         }
 
         private void btXoa_Click(object sender, EventArgs e)

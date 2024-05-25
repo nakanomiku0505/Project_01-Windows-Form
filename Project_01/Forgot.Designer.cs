@@ -902,6 +902,7 @@
             this.Palette = this.kryptonPalette2;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
             this.Text = "Forgot";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Forgot_FormClosed);
             this.Load += new System.EventHandler(this.Forgot_Load);
             ((System.ComponentModel.ISupportInitialize)(this.returnLogin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

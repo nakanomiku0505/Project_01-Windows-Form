@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using DAL;
@@ -19,16 +20,26 @@ namespace BUS
         {
             return lsp.kiemtramatrung(ma);
         }
+        public int kiemtratentrung(string ma)
+        {
+            return lsp.kiemtratentrung(ma);
+        }
         public string ThemLSP(LoaiSP nvien)
         {
             if (string.IsNullOrEmpty(nvien.TenLoaiSP) || string.IsNullOrEmpty(nvien.MoTa) || string.IsNullOrEmpty(nvien.MaNCC))
             {
                 return "-1";
             }
+            
             else if (kiemtramatrung(nvien.MaLoaiSP) > 0)
             {
                 return "-2";
             }
+            else if (kiemtratentrung(nvien.TenLoaiSP) > 0)
+            {
+                return "-3";
+            }
+            
             else if (lsp.ThemLSP(nvien))
             {
                 return "1";

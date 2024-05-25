@@ -209,5 +209,10 @@ namespace Project_01
                 e.Handled = true;
             }
         }
+
+        private void Forgot_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -17,6 +17,12 @@ namespace BUS
         {
             return account.getData();
         }
+        public static bool IsValidEmail(string email)
+        {
+            // Sử dụng biểu thức chính quy để kiểm tra định dạng email
+            var regex = new System.Text.RegularExpressions.Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
+            return regex.IsMatch(email);
+        }
         public string checkAcc(string users, string passwords)
         {
             if (string.IsNullOrEmpty(users) || string.IsNullOrEmpty(passwords))
@@ -60,7 +66,11 @@ namespace BUS
             {
                 throw new Exception("Mật khẩu không đủ mạnh.");
             }
+            if (!IsValidEmail(Email))
+            {
+                throw new Exception("Định dạng email không đúng.");
 
+            }
             // Tạo một đối tượng TaiKhoan từ các tham số đầu vào
             Accounts taiKhoan = new Accounts();
             taiKhoan.users = TenDangNhap;
@@ -106,6 +116,11 @@ namespace BUS
             if (string.IsNullOrEmpty(us) || string.IsNullOrEmpty(em))
             {
                 throw new Exception( "Các trường thông tin không được để trống.");
+            }
+            if (!IsValidEmail(em))
+            {
+                throw new Exception("Định dạng email không đúng.");
+
             }
             if (account.XacMinh(acc) < 1)
             {

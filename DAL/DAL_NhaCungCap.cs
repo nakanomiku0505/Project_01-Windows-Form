@@ -21,6 +21,11 @@ namespace DAL
             string sql = "Select count(*) from NhaCungCap where MaNCC='" + ma.Trim() + "'";
             return db.CheckID(ma, sql);
         }
+        public int kiemtratentrung(string ma)
+        {
+            string sql = "Select count(*) from NhaCungCap where TenNCC = N'" + ma.Trim() + "'";
+            return db.CheckID(ma, sql);
+        }
         public bool ThemNCC(NhaCungCap ls)
         {
             string sql = string.Format("EXEC InsertNhaCungCap @TenNCC = N'{0}',@DiaChi = N'{1}',@SDT = '{2}',@Email = '{3}'", ls.TenNCC, ls.DiaChi, ls.SDT, ls.Email);

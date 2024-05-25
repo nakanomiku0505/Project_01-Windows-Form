@@ -21,6 +21,8 @@ namespace DAL
             string sql = "Select count(*) from NhanVien where MaNV='" + ma.Trim() + "'";
             return db.CheckID(ma, sql);
         }
+
+        
         public bool Themnv(NhanVien nv)
         {
             string sql = string.Format("EXEC InsertEmployee @TenNV = N'{0}' ,@DiaChi = N'{1}' ,@SDT = '{2}' ,@users = null", nv.TenNV, nv.DiaChi, nv.SDT);

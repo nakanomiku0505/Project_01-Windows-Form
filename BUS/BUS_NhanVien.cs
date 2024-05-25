@@ -19,16 +19,26 @@ namespace BUS
         {
             return nv.kiemtramatrung(ma);
         }
+
         public string Themnv(NhanVien nvien)
         {
             if (string.IsNullOrEmpty(nvien.TenNV) || string.IsNullOrEmpty(nvien.DiaChi) || string.IsNullOrEmpty(nvien.SDT))
             {
                 return "-1";
             }
+            else if (nvien.SDT.Length < 0 || nvien.SDT.Length > 10)
+            {
+                return "-4";
+            }
             else if (kiemtramatrung(nvien.MaNV) > 0)
             {
                 return "-2";
             }
+            else if (nvien.SDT.Length != 10)
+            {
+                return "-4";
+            }
+            
             else if (nv.Themnv(nvien))
             {
                 return "Thêm thành công.";
@@ -59,6 +69,10 @@ namespace BUS
             else if (nv.Suavn(nvien))
             {
                 return "1";
+            }
+            else if (nvien.SDT.Length != 10)
+            {
+                return "-4";
             }
             else
             {

@@ -169,6 +169,7 @@
             this.bunifuGroupBox1.TabIndex = 24;
             this.bunifuGroupBox1.TabStop = false;
             this.bunifuGroupBox1.Text = "Thông tin nhà cung cấp";
+            this.bunifuGroupBox1.Enter += new System.EventHandler(this.bunifuGroupBox1_Enter);
             // 
             // tbEmail
             // 

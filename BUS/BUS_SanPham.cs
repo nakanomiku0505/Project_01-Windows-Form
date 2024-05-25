@@ -19,6 +19,10 @@ namespace BUS
         {
             return sp.kiemtramatrung(ma);
         }
+        public int kiemtratentrung(string ma)
+        {
+            return sp.kiemtratentrung(ma);
+        }
         public string ThemSP(SP nvien)
         {
             if (string.IsNullOrEmpty(nvien.TenSP) || string.IsNullOrEmpty(nvien.Gia.ToString()) || string.IsNullOrEmpty(nvien.Mota) || string.IsNullOrEmpty(nvien.SL.ToString()) || string.IsNullOrEmpty(nvien.MaLoaiSP))
@@ -28,6 +32,10 @@ namespace BUS
             else if (kiemtramatrung(nvien.MaSP) > 0)
             {
                 return "-2";
+            }
+            else if (kiemtratentrung(nvien.TenSP) > 0)
+            {
+                return "-3";
             }
             else if (sp.ThemSP(nvien))
             {
