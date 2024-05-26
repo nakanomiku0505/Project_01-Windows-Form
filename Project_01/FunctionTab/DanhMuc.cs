@@ -124,17 +124,25 @@ namespace Project_01.FunctionTab
 
         private void btXoa_Click(object sender, EventArgs e)
         {
-            string malsp = lsp.XoaLSP(tbMaLSP.Text);
-            if (malsp == "-1")
+            
+            if (tbMaLSP.Text == "")
             {
-                MessageBox.Show("Xóa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                listLSP.DataSource = lsp.getData();
-                ClearTB();
-                LoadDS();
+                MessageBox.Show("Chưa chọn loại sản phẩm nào.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                MessageBox.Show("Xóa thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                string malsp = lsp.XoaLSP(tbMaLSP.Text);
+                if (malsp == "-1")
+                {
+                    MessageBox.Show("Xóa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    listLSP.DataSource = lsp.getData();
+                    ClearTB();
+                    LoadDS();
+                }
+                else
+                {
+                    MessageBox.Show("Xóa thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 

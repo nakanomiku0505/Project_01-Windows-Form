@@ -132,15 +132,22 @@ namespace Project_01.FunctionTab
         private void btXoa_Click(object sender, EventArgs e)
         {
             string mancc = nc.XoaNCC(tbMaNCC.Text);
-            if (mancc == "-1")
+            if (tbMaNCC.Text == "")
             {
-                MessageBox.Show("Xóa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                ClearTB();
-                LoadDS();
+                MessageBox.Show("Chưa chọn nhà cung cấp nào.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                MessageBox.Show("Xóa thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (mancc == "-1")
+                {
+                    MessageBox.Show("Xóa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ClearTB();
+                    LoadDS();
+                }
+                else
+                {
+                    MessageBox.Show("Xóa thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 
@@ -175,6 +182,19 @@ namespace Project_01.FunctionTab
         private void bunifuGroupBox1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void tbSDT_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbSDT_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

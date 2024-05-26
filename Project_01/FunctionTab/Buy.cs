@@ -379,7 +379,7 @@ namespace Project_01.FunctionTab
 
                     // Hiển thị lại giá trị tổng tiền
                     lbPrice.Text = TongTien().ToString();
-                    lbPrice.Text += "đ";
+                    
 
                     // Hiển thị lại giá trị tổng tiền của từng hàng
                     foreach (DataGridViewRow row in listBuy.Rows)

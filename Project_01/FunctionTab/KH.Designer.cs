@@ -687,6 +687,7 @@
             this.tbEmail.TextPlaceholder = "Nhập địa chỉ email...";
             this.tbEmail.UseSystemPasswordChar = false;
             this.tbEmail.WordWrap = true;
+            this.tbEmail.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbEmail_KeyPress);
             // 
             // label1
             // 

@@ -32,10 +32,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties21 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties22 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties23 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties24 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QLSP));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
@@ -61,6 +57,10 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties18 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties19 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties20 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties21 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties22 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties23 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties24 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.listSP = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.maSPDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tenSPDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -74,25 +74,25 @@
             this.bunifuGroupBox1 = new Bunifu.UI.WinForms.BunifuGroupBox();
             this.lbTenLSP = new System.Windows.Forms.Label();
             this.lbTenLoaiSP = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.cbLoaiSP = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btTim = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.sPTableAdapter = new Project_01.QLCHMTDataSet5TableAdapters.SPTableAdapter();
-            this.tbTim = new Bunifu.UI.WinForms.BunifuTextBox();
             this.btXoa = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btSua = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btThem = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btClear = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.tbMaSP = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.tbMoTa = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.tbSL = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.cbLoaiSP = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.tbGia = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.tbTenSP = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btTim = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.sPTableAdapter = new Project_01.QLCHMTDataSet5TableAdapters.SPTableAdapter();
+            this.tbTim = new Bunifu.UI.WinForms.BunifuTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.listSP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sPBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLCHMTDataSet5)).BeginInit();
@@ -289,207 +289,6 @@
             this.lbTenLoaiSP.Name = "lbTenLoaiSP";
             this.lbTenLoaiSP.Size = new System.Drawing.Size(0, 17);
             this.lbTenLoaiSP.TabIndex = 26;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(6, 51);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(71, 25);
-            this.label6.TabIndex = 16;
-            this.label6.Text = "Mã SP:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 330);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(68, 25);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Mô tả:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(288, 212);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(94, 25);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Số lượng:";
-            // 
-            // cbLoaiSP
-            // 
-            this.cbLoaiSP.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbLoaiSP.DropDownWidth = 183;
-            this.cbLoaiSP.Location = new System.Drawing.Point(79, 90);
-            this.cbLoaiSP.Name = "cbLoaiSP";
-            this.cbLoaiSP.Size = new System.Drawing.Size(191, 29);
-            this.cbLoaiSP.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.cbLoaiSP.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.cbLoaiSP.StateCommon.ComboBox.Border.Rounding = 10;
-            this.cbLoaiSP.StateCommon.ComboBox.Border.Width = 2;
-            this.cbLoaiSP.StateNormal.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.cbLoaiSP.StateNormal.ComboBox.Border.Rounding = 10;
-            this.cbLoaiSP.StateNormal.ComboBox.Border.Width = 2;
-            this.cbLoaiSP.TabIndex = 8;
-            this.cbLoaiSP.SelectedIndexChanged += new System.EventHandler(this.cbLoaiSP_SelectedIndexChanged);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(6, 216);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 25);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Giá:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 140);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 25);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Tên SP:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(5, 90);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 25);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Loại SP:";
-            // 
-            // btTim
-            // 
-            this.btTim.Location = new System.Drawing.Point(506, 20);
-            this.btTim.Name = "btTim";
-            this.btTim.Size = new System.Drawing.Size(41, 41);
-            this.btTim.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btTim.StateDisabled.Border.Color1 = System.Drawing.Color.Transparent;
-            this.btTim.StateDisabled.Border.Color2 = System.Drawing.Color.Transparent;
-            this.btTim.StateDisabled.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btTim.StateNormal.Back.Color1 = System.Drawing.Color.Transparent;
-            this.btTim.StateNormal.Back.Color2 = System.Drawing.Color.Transparent;
-            this.btTim.StateNormal.Back.Image = global::Project_01.Properties.Resources.icons8_search_96;
-            this.btTim.StateNormal.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Stretch;
-            this.btTim.StateNormal.Border.Color1 = System.Drawing.Color.Transparent;
-            this.btTim.StateNormal.Border.Color2 = System.Drawing.Color.Transparent;
-            this.btTim.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btTim.StatePressed.Back.Color1 = System.Drawing.Color.DarkOrange;
-            this.btTim.StatePressed.Back.Color2 = System.Drawing.Color.Transparent;
-            this.btTim.StatePressed.Back.Image = global::Project_01.Properties.Resources.icons8_search_96__1_;
-            this.btTim.StatePressed.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Stretch;
-            this.btTim.StatePressed.Border.Color1 = System.Drawing.Color.Transparent;
-            this.btTim.StatePressed.Border.Color2 = System.Drawing.Color.Transparent;
-            this.btTim.StatePressed.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btTim.StateTracking.Back.Color1 = System.Drawing.Color.Transparent;
-            this.btTim.StateTracking.Back.Color2 = System.Drawing.Color.Transparent;
-            this.btTim.StateTracking.Back.Image = global::Project_01.Properties.Resources.icons8_search_96__1_;
-            this.btTim.StateTracking.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Stretch;
-            this.btTim.StateTracking.Border.Color1 = System.Drawing.Color.Transparent;
-            this.btTim.StateTracking.Border.Color2 = System.Drawing.Color.Transparent;
-            this.btTim.StateTracking.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btTim.TabIndex = 14;
-            this.btTim.Values.Image = global::Project_01.Properties.Resources.icons8_search_96;
-            this.btTim.Values.Text = "";
-            this.btTim.Click += new System.EventHandler(this.btTim_Click);
-            // 
-            // sPTableAdapter
-            // 
-            this.sPTableAdapter.ClearBeforeFill = true;
-            // 
-            // tbTim
-            // 
-            this.tbTim.AcceptsReturn = false;
-            this.tbTim.AcceptsTab = false;
-            this.tbTim.AnimationSpeed = 200;
-            this.tbTim.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.tbTim.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.tbTim.BackColor = System.Drawing.Color.Transparent;
-            this.tbTim.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tbTim.BackgroundImage")));
-            this.tbTim.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.tbTim.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.tbTim.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.tbTim.BorderColorIdle = System.Drawing.Color.Silver;
-            this.tbTim.BorderRadius = 10;
-            this.tbTim.BorderThickness = 2;
-            this.tbTim.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.tbTim.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbTim.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
-            this.tbTim.DefaultText = "";
-            this.tbTim.FillColor = System.Drawing.Color.White;
-            this.tbTim.HideSelection = true;
-            this.tbTim.IconLeft = null;
-            this.tbTim.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbTim.IconPadding = 10;
-            this.tbTim.IconRight = null;
-            this.tbTim.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbTim.Lines = new string[0];
-            this.tbTim.Location = new System.Drawing.Point(3, 20);
-            this.tbTim.MaxLength = 32767;
-            this.tbTim.MinimumSize = new System.Drawing.Size(1, 1);
-            this.tbTim.Modified = false;
-            this.tbTim.Multiline = false;
-            this.tbTim.Name = "tbTim";
-            stateProperties21.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties21.FillColor = System.Drawing.Color.Empty;
-            stateProperties21.ForeColor = System.Drawing.Color.Empty;
-            stateProperties21.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.tbTim.OnActiveState = stateProperties21;
-            stateProperties22.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties22.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties22.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.tbTim.OnDisabledState = stateProperties22;
-            stateProperties23.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties23.FillColor = System.Drawing.Color.Empty;
-            stateProperties23.ForeColor = System.Drawing.Color.Empty;
-            stateProperties23.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.tbTim.OnHoverState = stateProperties23;
-            stateProperties24.BorderColor = System.Drawing.Color.Silver;
-            stateProperties24.FillColor = System.Drawing.Color.White;
-            stateProperties24.ForeColor = System.Drawing.Color.Empty;
-            stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.tbTim.OnIdleState = stateProperties24;
-            this.tbTim.Padding = new System.Windows.Forms.Padding(3);
-            this.tbTim.PasswordChar = '\0';
-            this.tbTim.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.tbTim.PlaceholderText = "Nhập tên sản phẩm muốn tìm...";
-            this.tbTim.ReadOnly = false;
-            this.tbTim.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.tbTim.SelectedText = "";
-            this.tbTim.SelectionLength = 0;
-            this.tbTim.SelectionStart = 0;
-            this.tbTim.ShortcutsEnabled = true;
-            this.tbTim.Size = new System.Drawing.Size(496, 41);
-            this.tbTim.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.tbTim.TabIndex = 11;
-            this.tbTim.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.tbTim.TextMarginBottom = 0;
-            this.tbTim.TextMarginLeft = 3;
-            this.tbTim.TextMarginTop = 0;
-            this.tbTim.TextPlaceholder = "Nhập tên sản phẩm muốn tìm...";
-            this.tbTim.UseSystemPasswordChar = false;
-            this.tbTim.WordWrap = true;
             // 
             // btXoa
             // 
@@ -927,6 +726,17 @@
             this.tbMaSP.WordWrap = true;
             this.tbMaSP.TextChanged += new System.EventHandler(this.bunifuTextBox6_TextChanged);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(6, 51);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(71, 25);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "Mã SP:";
+            // 
             // tbMoTa
             // 
             this.tbMoTa.AcceptsReturn = false;
@@ -1001,6 +811,15 @@
             this.tbMoTa.UseSystemPasswordChar = false;
             this.tbMoTa.WordWrap = true;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 330);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(68, 25);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Mô tả:";
+            // 
             // tbSL
             // 
             this.tbSL.AcceptsReturn = false;
@@ -1074,6 +893,38 @@
             this.tbSL.TextPlaceholder = "Nhập số lượng...";
             this.tbSL.UseSystemPasswordChar = false;
             this.tbSL.WordWrap = true;
+            this.tbSL.TextChanged += new System.EventHandler(this.tbSL_TextChanged);
+            this.tbSL.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbSL_KeyPress);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(288, 212);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(94, 25);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Số lượng:";
+            // 
+            // cbLoaiSP
+            // 
+            this.cbLoaiSP.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbLoaiSP.DropDownWidth = 183;
+            this.cbLoaiSP.Location = new System.Drawing.Point(79, 90);
+            this.cbLoaiSP.Name = "cbLoaiSP";
+            this.cbLoaiSP.Size = new System.Drawing.Size(191, 29);
+            this.cbLoaiSP.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cbLoaiSP.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.cbLoaiSP.StateCommon.ComboBox.Border.Rounding = 10;
+            this.cbLoaiSP.StateCommon.ComboBox.Border.Width = 2;
+            this.cbLoaiSP.StateNormal.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.cbLoaiSP.StateNormal.ComboBox.Border.Rounding = 10;
+            this.cbLoaiSP.StateNormal.ComboBox.Border.Width = 2;
+            this.cbLoaiSP.TabIndex = 8;
+            this.cbLoaiSP.SelectedIndexChanged += new System.EventHandler(this.cbLoaiSP_SelectedIndexChanged);
             // 
             // tbGia
             // 
@@ -1148,6 +999,18 @@
             this.tbGia.TextPlaceholder = "Nhập giá của sản phẩm...";
             this.tbGia.UseSystemPasswordChar = false;
             this.tbGia.WordWrap = true;
+            this.tbGia.TextChanged += new System.EventHandler(this.tbGia_TextChanged);
+            this.tbGia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbGia_KeyPress);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Location = new System.Drawing.Point(6, 216);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(45, 25);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Giá:";
             // 
             // tbTenSP
             // 
@@ -1222,6 +1085,147 @@
             this.tbTenSP.TextPlaceholder = "Nhập tên sản phẩm...";
             this.tbTenSP.UseSystemPasswordChar = false;
             this.tbTenSP.WordWrap = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 140);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(72, 25);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Tên SP:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(5, 90);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(78, 25);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Loại SP:";
+            // 
+            // btTim
+            // 
+            this.btTim.Location = new System.Drawing.Point(506, 20);
+            this.btTim.Name = "btTim";
+            this.btTim.Size = new System.Drawing.Size(41, 41);
+            this.btTim.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btTim.StateDisabled.Border.Color1 = System.Drawing.Color.Transparent;
+            this.btTim.StateDisabled.Border.Color2 = System.Drawing.Color.Transparent;
+            this.btTim.StateDisabled.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btTim.StateNormal.Back.Color1 = System.Drawing.Color.Transparent;
+            this.btTim.StateNormal.Back.Color2 = System.Drawing.Color.Transparent;
+            this.btTim.StateNormal.Back.Image = global::Project_01.Properties.Resources.icons8_search_96;
+            this.btTim.StateNormal.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Stretch;
+            this.btTim.StateNormal.Border.Color1 = System.Drawing.Color.Transparent;
+            this.btTim.StateNormal.Border.Color2 = System.Drawing.Color.Transparent;
+            this.btTim.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btTim.StatePressed.Back.Color1 = System.Drawing.Color.DarkOrange;
+            this.btTim.StatePressed.Back.Color2 = System.Drawing.Color.Transparent;
+            this.btTim.StatePressed.Back.Image = global::Project_01.Properties.Resources.icons8_search_96__1_;
+            this.btTim.StatePressed.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Stretch;
+            this.btTim.StatePressed.Border.Color1 = System.Drawing.Color.Transparent;
+            this.btTim.StatePressed.Border.Color2 = System.Drawing.Color.Transparent;
+            this.btTim.StatePressed.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btTim.StateTracking.Back.Color1 = System.Drawing.Color.Transparent;
+            this.btTim.StateTracking.Back.Color2 = System.Drawing.Color.Transparent;
+            this.btTim.StateTracking.Back.Image = global::Project_01.Properties.Resources.icons8_search_96__1_;
+            this.btTim.StateTracking.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Stretch;
+            this.btTim.StateTracking.Border.Color1 = System.Drawing.Color.Transparent;
+            this.btTim.StateTracking.Border.Color2 = System.Drawing.Color.Transparent;
+            this.btTim.StateTracking.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btTim.TabIndex = 14;
+            this.btTim.Values.Image = global::Project_01.Properties.Resources.icons8_search_96;
+            this.btTim.Values.Text = "";
+            this.btTim.Click += new System.EventHandler(this.btTim_Click);
+            // 
+            // sPTableAdapter
+            // 
+            this.sPTableAdapter.ClearBeforeFill = true;
+            // 
+            // tbTim
+            // 
+            this.tbTim.AcceptsReturn = false;
+            this.tbTim.AcceptsTab = false;
+            this.tbTim.AnimationSpeed = 200;
+            this.tbTim.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.tbTim.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.tbTim.BackColor = System.Drawing.Color.Transparent;
+            this.tbTim.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tbTim.BackgroundImage")));
+            this.tbTim.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.tbTim.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.tbTim.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.tbTim.BorderColorIdle = System.Drawing.Color.Silver;
+            this.tbTim.BorderRadius = 10;
+            this.tbTim.BorderThickness = 2;
+            this.tbTim.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.tbTim.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbTim.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.tbTim.DefaultText = "";
+            this.tbTim.FillColor = System.Drawing.Color.White;
+            this.tbTim.HideSelection = true;
+            this.tbTim.IconLeft = null;
+            this.tbTim.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbTim.IconPadding = 10;
+            this.tbTim.IconRight = null;
+            this.tbTim.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbTim.Lines = new string[0];
+            this.tbTim.Location = new System.Drawing.Point(3, 20);
+            this.tbTim.MaxLength = 32767;
+            this.tbTim.MinimumSize = new System.Drawing.Size(1, 1);
+            this.tbTim.Modified = false;
+            this.tbTim.Multiline = false;
+            this.tbTim.Name = "tbTim";
+            stateProperties21.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties21.FillColor = System.Drawing.Color.Empty;
+            stateProperties21.ForeColor = System.Drawing.Color.Empty;
+            stateProperties21.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.tbTim.OnActiveState = stateProperties21;
+            stateProperties22.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties22.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties22.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.tbTim.OnDisabledState = stateProperties22;
+            stateProperties23.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties23.FillColor = System.Drawing.Color.Empty;
+            stateProperties23.ForeColor = System.Drawing.Color.Empty;
+            stateProperties23.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.tbTim.OnHoverState = stateProperties23;
+            stateProperties24.BorderColor = System.Drawing.Color.Silver;
+            stateProperties24.FillColor = System.Drawing.Color.White;
+            stateProperties24.ForeColor = System.Drawing.Color.Empty;
+            stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.tbTim.OnIdleState = stateProperties24;
+            this.tbTim.Padding = new System.Windows.Forms.Padding(3);
+            this.tbTim.PasswordChar = '\0';
+            this.tbTim.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.tbTim.PlaceholderText = "Nhập tên sản phẩm muốn tìm...";
+            this.tbTim.ReadOnly = false;
+            this.tbTim.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.tbTim.SelectedText = "";
+            this.tbTim.SelectionLength = 0;
+            this.tbTim.SelectionStart = 0;
+            this.tbTim.ShortcutsEnabled = true;
+            this.tbTim.Size = new System.Drawing.Size(496, 41);
+            this.tbTim.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.tbTim.TabIndex = 11;
+            this.tbTim.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.tbTim.TextMarginBottom = 0;
+            this.tbTim.TextMarginLeft = 3;
+            this.tbTim.TextMarginTop = 0;
+            this.tbTim.TextPlaceholder = "Nhập tên sản phẩm muốn tìm...";
+            this.tbTim.UseSystemPasswordChar = false;
+            this.tbTim.WordWrap = true;
             // 
             // QLSP
             // 

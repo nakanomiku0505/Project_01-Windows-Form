@@ -100,37 +100,44 @@ namespace Project_01.FunctionTab
         private void btThem_Click(object sender, EventArgs e)
 
         {
-            
-            SP ls = new SP();
-            ls.MaSP = tbMaSP.Text;
-            ls.TenSP = tbTenSP.Text;
-            ls.Gia = Convert.ToInt32(tbGia.Text);
-            ls.Mota = tbMoTa.Text;
-            ls.SL = int.Parse(tbSL.Text);
-            ls.MaLoaiSP = cbLoaiSP.Text;
-            string result = sp.ThemSP(ls);
-            if (result == "1")
-            {
-                MessageBox.Show("Thêm sản phẩm thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                LoadDS();
-                ClearTB();
-
-            }
-            else if (result == "-1")
+            if (tbGia.Text == "" || tbTenSP.Text == "" || tbMoTa.Text == "" || tbSL.Text == "")
             {
                 MessageBox.Show("Các trường thông tin không được bỏ trống!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else if (result == "-2")
-            {
-                MessageBox.Show("Trùng mã sản phẩm.\nVui lòng thử lại.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else if (result == "-3")
-            {
-                MessageBox.Show("Đã có sản phẩm này.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
             else
             {
-                MessageBox.Show("Thêm thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                SP ls = new SP();
+                ls.MaSP = tbMaSP.Text;
+                ls.TenSP = tbTenSP.Text;
+                ls.Gia = Convert.ToInt32(tbGia.Text);
+                ls.Mota = tbMoTa.Text;
+                ls.SL = Convert.ToInt32(tbSL.Text);
+                ls.MaLoaiSP = cbLoaiSP.Text;
+                string result = sp.ThemSP(ls);
+                if (result == "-1")
+                {
+                    MessageBox.Show("Các trường thông tin không được bỏ trống!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (result == "-2")
+                {
+                    MessageBox.Show("Trùng mã sản phẩm.\nVui lòng thử lại.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (result == "-3")
+                {
+                    MessageBox.Show("Đã có sản phẩm này.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (result == "1")
+                {
+                    MessageBox.Show("Thêm sản phẩm thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LoadDS();
+                    ClearTB();
+
+                }
+
+                else
+                {
+                    MessageBox.Show("Thêm thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 
@@ -139,6 +146,10 @@ namespace Project_01.FunctionTab
             if (tbMaSP.Text == "")
             {
                 MessageBox.Show("Chưa chọn sản phẩm nào.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else if (tbGia.Text == "" || tbTenSP.Text == "" || tbMoTa.Text == "" || tbSL.Text == "")
+            {
+                MessageBox.Show("Các trường thông tin không được bỏ trống!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
@@ -171,16 +182,24 @@ namespace Project_01.FunctionTab
 
         private void btXoa_Click(object sender, EventArgs e)
         {
-            string masp = sp.XoaSP(tbMaSP.Text);
-            if (masp == "-1")
+            
+            if (tbMaSP.Text == "")
             {
-                MessageBox.Show("Xóa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                ClearTB();
-                LoadDS();
+                MessageBox.Show("Chưa chọn sản phẩm nào.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                MessageBox.Show("Xóa thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                string masp = sp.XoaSP(tbMaSP.Text);
+                if (masp == "-1")
+                {
+                    MessageBox.Show("Xóa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ClearTB();
+                    LoadDS();
+                }
+                else
+                {
+                    MessageBox.Show("Xóa thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
         private void btTim_Click(object sender, EventArgs e)
@@ -192,6 +211,32 @@ namespace Project_01.FunctionTab
         private void lbTenLSP_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void tbSL_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbGia_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbGia_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void tbSL_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

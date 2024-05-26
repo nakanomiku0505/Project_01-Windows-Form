@@ -32,10 +32,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties17 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties18 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties19 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties20 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NV));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -57,6 +53,10 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties14 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties15 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties16 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties17 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties18 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties19 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties20 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.btTim = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.listNV = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.maNVDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -66,20 +66,20 @@
             this.nhanVienBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.qLCHMTDataSet = new Project_01.QLCHMTDataSet();
             this.bunifuGroupBox1 = new Bunifu.UI.WinForms.BunifuGroupBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.nhanVienTableAdapter = new Project_01.QLCHMTDataSetTableAdapters.NhanVienTableAdapter();
-            this.tbTim = new Bunifu.UI.WinForms.BunifuTextBox();
             this.btClear = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.tbMaNV = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.btXoa = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btSua = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btThem = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.tbSDT = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.tbDC = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.tbTenNV = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.nhanVienTableAdapter = new Project_01.QLCHMTDataSetTableAdapters.NhanVienTableAdapter();
+            this.tbTim = new Bunifu.UI.WinForms.BunifuTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.listNV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nhanVienBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLCHMTDataSet)).BeginInit();
@@ -270,121 +270,6 @@
             this.bunifuGroupBox1.TabStop = false;
             this.bunifuGroupBox1.Text = "Thông tin nhân viên";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(38, 54);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(77, 25);
-            this.label6.TabIndex = 18;
-            this.label6.Text = "Mã NV:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(38, 320);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 25);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "SDT:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(38, 232);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 25);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Địa chỉ:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(38, 138);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 25);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Tên NV:";
-            // 
-            // nhanVienTableAdapter
-            // 
-            this.nhanVienTableAdapter.ClearBeforeFill = true;
-            // 
-            // tbTim
-            // 
-            this.tbTim.AcceptsReturn = false;
-            this.tbTim.AcceptsTab = false;
-            this.tbTim.AnimationSpeed = 200;
-            this.tbTim.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.tbTim.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.tbTim.BackColor = System.Drawing.Color.Transparent;
-            this.tbTim.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tbTim.BackgroundImage")));
-            this.tbTim.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.tbTim.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.tbTim.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.tbTim.BorderColorIdle = System.Drawing.Color.Silver;
-            this.tbTim.BorderRadius = 10;
-            this.tbTim.BorderThickness = 2;
-            this.tbTim.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.tbTim.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbTim.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
-            this.tbTim.DefaultText = "";
-            this.tbTim.FillColor = System.Drawing.Color.White;
-            this.tbTim.HideSelection = true;
-            this.tbTim.IconLeft = null;
-            this.tbTim.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbTim.IconPadding = 10;
-            this.tbTim.IconRight = null;
-            this.tbTim.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbTim.Lines = new string[0];
-            this.tbTim.Location = new System.Drawing.Point(3, 20);
-            this.tbTim.MaxLength = 32767;
-            this.tbTim.MinimumSize = new System.Drawing.Size(1, 1);
-            this.tbTim.Modified = false;
-            this.tbTim.Multiline = false;
-            this.tbTim.Name = "tbTim";
-            stateProperties17.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties17.FillColor = System.Drawing.Color.Empty;
-            stateProperties17.ForeColor = System.Drawing.Color.Empty;
-            stateProperties17.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.tbTim.OnActiveState = stateProperties17;
-            stateProperties18.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties18.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties18.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.tbTim.OnDisabledState = stateProperties18;
-            stateProperties19.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties19.FillColor = System.Drawing.Color.Empty;
-            stateProperties19.ForeColor = System.Drawing.Color.Empty;
-            stateProperties19.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.tbTim.OnHoverState = stateProperties19;
-            stateProperties20.BorderColor = System.Drawing.Color.Silver;
-            stateProperties20.FillColor = System.Drawing.Color.White;
-            stateProperties20.ForeColor = System.Drawing.Color.Empty;
-            stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.tbTim.OnIdleState = stateProperties20;
-            this.tbTim.Padding = new System.Windows.Forms.Padding(3);
-            this.tbTim.PasswordChar = '\0';
-            this.tbTim.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.tbTim.PlaceholderText = "Nhập tên nhân viên muốn tìm...";
-            this.tbTim.ReadOnly = false;
-            this.tbTim.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.tbTim.SelectedText = "";
-            this.tbTim.SelectionLength = 0;
-            this.tbTim.SelectionStart = 0;
-            this.tbTim.ShortcutsEnabled = true;
-            this.tbTim.Size = new System.Drawing.Size(496, 41);
-            this.tbTim.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.tbTim.TabIndex = 21;
-            this.tbTim.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.tbTim.TextMarginBottom = 0;
-            this.tbTim.TextMarginLeft = 3;
-            this.tbTim.TextMarginTop = 0;
-            this.tbTim.TextPlaceholder = "Nhập tên nhân viên muốn tìm...";
-            this.tbTim.UseSystemPasswordChar = false;
-            this.tbTim.WordWrap = true;
-            this.tbTim.TextChanged += new System.EventHandler(this.bunifuTextBox5_TextChanged);
-            // 
             // btClear
             // 
             this.btClear.AllowAnimations = true;
@@ -548,6 +433,15 @@
             this.tbMaNV.TextPlaceholder = "";
             this.tbMaNV.UseSystemPasswordChar = false;
             this.tbMaNV.WordWrap = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(38, 54);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(77, 25);
+            this.label6.TabIndex = 18;
+            this.label6.Text = "Mã NV:";
             // 
             // btXoa
             // 
@@ -892,6 +786,16 @@
             this.tbSDT.TextPlaceholder = "Nhập số điện thoại nhân viên...";
             this.tbSDT.UseSystemPasswordChar = false;
             this.tbSDT.WordWrap = true;
+            this.tbSDT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbSDT_KeyPress);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(38, 320);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(50, 25);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "SDT:";
             // 
             // tbDC
             // 
@@ -967,6 +871,15 @@
             this.tbDC.UseSystemPasswordChar = false;
             this.tbDC.WordWrap = true;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(38, 232);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(76, 25);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Địa chỉ:";
+            // 
             // tbTenNV
             // 
             this.tbTenNV.AcceptsReturn = false;
@@ -1040,6 +953,94 @@
             this.tbTenNV.TextPlaceholder = "Nhập tên nhân viên...";
             this.tbTenNV.UseSystemPasswordChar = false;
             this.tbTenNV.WordWrap = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(38, 138);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(78, 25);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Tên NV:";
+            // 
+            // nhanVienTableAdapter
+            // 
+            this.nhanVienTableAdapter.ClearBeforeFill = true;
+            // 
+            // tbTim
+            // 
+            this.tbTim.AcceptsReturn = false;
+            this.tbTim.AcceptsTab = false;
+            this.tbTim.AnimationSpeed = 200;
+            this.tbTim.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.tbTim.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.tbTim.BackColor = System.Drawing.Color.Transparent;
+            this.tbTim.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tbTim.BackgroundImage")));
+            this.tbTim.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.tbTim.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.tbTim.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.tbTim.BorderColorIdle = System.Drawing.Color.Silver;
+            this.tbTim.BorderRadius = 10;
+            this.tbTim.BorderThickness = 2;
+            this.tbTim.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.tbTim.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbTim.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.tbTim.DefaultText = "";
+            this.tbTim.FillColor = System.Drawing.Color.White;
+            this.tbTim.HideSelection = true;
+            this.tbTim.IconLeft = null;
+            this.tbTim.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbTim.IconPadding = 10;
+            this.tbTim.IconRight = null;
+            this.tbTim.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbTim.Lines = new string[0];
+            this.tbTim.Location = new System.Drawing.Point(3, 20);
+            this.tbTim.MaxLength = 32767;
+            this.tbTim.MinimumSize = new System.Drawing.Size(1, 1);
+            this.tbTim.Modified = false;
+            this.tbTim.Multiline = false;
+            this.tbTim.Name = "tbTim";
+            stateProperties17.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties17.FillColor = System.Drawing.Color.Empty;
+            stateProperties17.ForeColor = System.Drawing.Color.Empty;
+            stateProperties17.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.tbTim.OnActiveState = stateProperties17;
+            stateProperties18.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties18.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties18.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.tbTim.OnDisabledState = stateProperties18;
+            stateProperties19.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties19.FillColor = System.Drawing.Color.Empty;
+            stateProperties19.ForeColor = System.Drawing.Color.Empty;
+            stateProperties19.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.tbTim.OnHoverState = stateProperties19;
+            stateProperties20.BorderColor = System.Drawing.Color.Silver;
+            stateProperties20.FillColor = System.Drawing.Color.White;
+            stateProperties20.ForeColor = System.Drawing.Color.Empty;
+            stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.tbTim.OnIdleState = stateProperties20;
+            this.tbTim.Padding = new System.Windows.Forms.Padding(3);
+            this.tbTim.PasswordChar = '\0';
+            this.tbTim.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.tbTim.PlaceholderText = "Nhập tên nhân viên muốn tìm...";
+            this.tbTim.ReadOnly = false;
+            this.tbTim.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.tbTim.SelectedText = "";
+            this.tbTim.SelectionLength = 0;
+            this.tbTim.SelectionStart = 0;
+            this.tbTim.ShortcutsEnabled = true;
+            this.tbTim.Size = new System.Drawing.Size(496, 41);
+            this.tbTim.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.tbTim.TabIndex = 21;
+            this.tbTim.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.tbTim.TextMarginBottom = 0;
+            this.tbTim.TextMarginLeft = 3;
+            this.tbTim.TextMarginTop = 0;
+            this.tbTim.TextPlaceholder = "Nhập tên nhân viên muốn tìm...";
+            this.tbTim.UseSystemPasswordChar = false;
+            this.tbTim.WordWrap = true;
+            this.tbTim.TextChanged += new System.EventHandler(this.bunifuTextBox5_TextChanged);
             // 
             // NV
             // 

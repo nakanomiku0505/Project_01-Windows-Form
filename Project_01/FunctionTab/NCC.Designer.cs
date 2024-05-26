@@ -770,6 +770,8 @@
             this.tbSDT.TextPlaceholder = "Nhập số điện thoại nhà cung cấp...";
             this.tbSDT.UseSystemPasswordChar = false;
             this.tbSDT.WordWrap = true;
+            this.tbSDT.TextChanged += new System.EventHandler(this.tbSDT_TextChanged);
+            this.tbSDT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbSDT_KeyPress);
             // 
             // label4
             // 

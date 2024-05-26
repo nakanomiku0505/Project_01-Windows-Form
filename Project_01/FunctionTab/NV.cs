@@ -141,16 +141,23 @@ namespace Project_01.FunctionTab
         private void btXoa_Click(object sender, EventArgs e)
         {
             string manv = nv.Xoanv(tbMaNV.Text);
-            if (manv == "-1")
+            if (tbMaNV.Text == "")
             {
-                MessageBox.Show("Xóa nhân viên thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                listNV.DataSource = nv.getData();
-                ClearTB();
-                LoadDS();
+                MessageBox.Show("Chưa chọn nhân viên nào.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                MessageBox.Show("Xóa nhân viên thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (manv == "-1")
+                {
+                    MessageBox.Show("Xóa nhân viên thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    listNV.DataSource = nv.getData();
+                    ClearTB();
+                    LoadDS();
+                }
+                else
+                {
+                    MessageBox.Show("Xóa nhân viên thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 
@@ -158,6 +165,14 @@ namespace Project_01.FunctionTab
         {
             string keyword = tbTim.Text;
             listNV.DataSource = nv.TimKiemNhanVien(keyword);
+        }
+
+        private void tbSDT_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

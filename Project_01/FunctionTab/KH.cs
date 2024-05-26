@@ -143,15 +143,22 @@ namespace Project_01.FunctionTab
         private void btXoa_Click(object sender, EventArgs e)
         {
             string makh = kh.XoaKH(tbMaKH.Text);
-            if (makh == "-1")
+            if (tbMaKH.Text == "")
             {
-                MessageBox.Show("Xóa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                ClearTB();
-                LoadDS();
+                MessageBox.Show("Chưa chọn khách hàng nào.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                MessageBox.Show("Xóa thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (makh == "-1")
+                {
+                    MessageBox.Show("Xóa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ClearTB();
+                    LoadDS();
+                }
+                else
+                {
+                    MessageBox.Show("Xóa thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 
@@ -163,6 +170,14 @@ namespace Project_01.FunctionTab
         private void bunifuGroupBox1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void tbEmail_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }
